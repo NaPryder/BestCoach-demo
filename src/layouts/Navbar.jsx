@@ -1,5 +1,5 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-import './Navbar.scss'
+import styles from './Navbar.module.scss'
 import Button from '../components/Button'
 
 export default function Navbar() {
@@ -8,16 +8,16 @@ export default function Navbar() {
   return (
     <nav>
       <Link to="/">
-        <img className="logo" src="src/assets/horizontal_full_color.af0a2780.webp" alt="logo" />
+        <img className={styles.logo} src="src/assets/horizontal_full_color.af0a2780.webp" alt="logo" />
       </Link>
 
-      <NavLink className="nav-link" end to="">
+      <NavLink className={styles.navLink} end to="">
         For Mentor
       </NavLink>
-      <NavLink className="nav-link" to="/client">
+      <NavLink className={styles.navLink} to="/client">
         For Mentee
       </NavLink>
-      <NavLink className="nav-link" to="/corporate">
+      <NavLink className={styles.navLink} to="/corporate">
         Corporate
       </NavLink>
       {/* <NavLink to="/news">News & Community</NavLink> */}

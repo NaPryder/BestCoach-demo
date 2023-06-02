@@ -1,6 +1,7 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import './App.scss'
 import { Suspense, lazy } from 'react'
+// import ScrollTopButton from './components/ScrollTopButton'
 
 // pages
 // import Mentor from './pages/Mentor/Mentor'
@@ -8,6 +9,7 @@ import { Suspense, lazy } from 'react'
 // import Corporate from './pages/Corporate/Corporate'
 // import Layout from './layouts/Layout'
 
+const ScrollTopButton = lazy(() => import('./components/ScrollTopButton'))
 const Layout = lazy(() => import('./layouts/Layout'))
 const Mentor = lazy(() => import('./pages/Mentor/Mentor'))
 const Mentee = lazy(() => import('./pages/Mentee/Mentee'))
@@ -52,10 +54,12 @@ const router = createBrowserRouter(
     </Route>
   )
 )
-
 export default function App() {
   return (
     <>
+      <Suspense>
+        <ScrollTopButton></ScrollTopButton>
+      </Suspense>
       <RouterProvider router={router} />
     </>
   )

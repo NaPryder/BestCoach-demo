@@ -7,11 +7,11 @@
   background-color: var(--primary-color);
 }
 
-button:hover {
+.btn:hover {
   background-color: var(--secondary-color);
 }
 
-button {
+.btn {
   @include main-button();
 
   &.sub {
