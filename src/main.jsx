@@ -2,29 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { BrowserRouter, createBrowserRouter } from 'react-router-dom'
+import './styles/theme.scss'
 
-import Root from './routes/root'
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-  },
-])
-// let routes = createRoutesFromElements(
-//   <Route path="/" element={<App />}>
-//     <Route path="Mentor" lazy={() => import('./pages/Mentor.jsx')} />
-//     <Route path="Mentee" lazy={() => import('./pages/Mentee.jsx')} />
-//   </Route>
-// )
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App></App>
-    </BrowserRouter>
+    <App></App>
   </React.StrictMode>
 )
 // ReactDOM.createRoot(document.getElementById('root')).render(
