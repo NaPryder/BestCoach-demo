@@ -1,0 +1,55 @@
+// @use '../abstract/variables';
+
+// @mixin btn-default() {
+//   cursor: pointer;
+//   padding: 9px 17px;
+//   text-align: center;
+//   background-color: var(variables.$maroon-primary);
+// }
+.btn-default {
+  cursor: pointer;
+  padding: 9px 17px;
+  text-align: center;
+  border-radius: 6px;
+}
+.btn-default:focus {
+  border-radius: 6px;
+  margin: 4px;
+}
+
+.btn {
+  // @include btn-default();
+  @extend .btn-default;
+  cursor: pointer;
+  padding: 9px 17px;
+  text-align: center;
+
+  //  primary
+  &.primary {
+    background-color: $maroon-primary;
+    color: $white;
+    border: none;
+  }
+
+  &.primary:hover {
+    background-color: $maroon-secondary;
+  }
+  &.primary:focus {
+    border: 1px solid $maroon-primary;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 0px 0px 2px $white, 0px 0px 0px 4px $maroon-primary;
+  }
+
+  //  secondary
+  &.secondary {
+    background-color: $white;
+    color: $dark-gray-blue-0;
+    border: 1px solid $light-gray-blue-0;
+  }
+  &.secondary:hover {
+    background-color: $light-gray-blue-1;
+  }
+  &.secondary:focus {
+    border: 1px solid $light-gray-blue-0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 0px 0px 2px $white, 0px 0px 0px 4px $bright-blue;
+  }
+}

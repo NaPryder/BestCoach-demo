@@ -1,5 +1,5 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
-import './App.scss'
+// import '../src/styles/layouts/App.scss'
 import { Suspense, lazy } from 'react'
 // import ScrollTopButton from './components/ScrollTopButton'
 
@@ -11,7 +11,7 @@ import { Suspense, lazy } from 'react'
 
 const ScrollTopButton = lazy(() => import('./components/ScrollTopButton'))
 const Layout = lazy(() => import('./layouts/Layout'))
-const Mentor = lazy(() => import('./pages/Mentor/Mentor'))
+const Home = lazy(() => import('@pages/Home'))
 const Mentee = lazy(() => import('./pages/Mentee/Mentee'))
 const Corporate = lazy(() => import('./pages/Corporate/Corporate'))
 // const ErrorPage = lazy(() => import('./pages/Error/ErrorPage'))
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
         index
         element={
           <Suspense>
-            <Mentor />
+            <Home />
           </Suspense>
         }
       />

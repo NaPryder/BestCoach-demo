@@ -1,5 +1,7 @@
-import Button from '../../components/Button'
-import './Mentor.scss'
+// import Button from '../../components/Button'
+// import './Mentor.scss'
+
+import Button from '@/components/Button'
 
 export default function Mentor() {
   return (

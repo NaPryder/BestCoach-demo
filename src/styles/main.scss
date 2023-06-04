@@ -1,0 +1,19 @@
+// this fgile use only import scss
+// base
+@import './base/base';
+@import './base/typography';
+
+// abstract
+@import './abstract/variables';
+@import './abstract/mixins';
+
+// layouts
+@import './layouts/App.scss';
+@import './layouts/Navbar.scss';
+@import './layouts/Footer.scss';
+
+// components
+@import './components/Button.scss';
+
+// pages
+@import './pages/Home';

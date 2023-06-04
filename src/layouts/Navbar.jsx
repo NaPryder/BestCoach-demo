@@ -1,6 +1,7 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-import styles from './Navbar.module.scss'
-import Button from '../components/Button'
+// import '@styles/layouts/Navbar.module.scss'
+import logo from '@/assets/logo-full.png'
+import Button from '@/components/Button'
 
 export default function Navbar() {
   const navigate = useNavigate()
@@ -8,25 +9,30 @@ export default function Navbar() {
   return (
     <nav>
       <Link to="/">
-        <img className={styles.logo} src="src/assets/horizontal_full_color.af0a2780.webp" alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
       </Link>
 
-      <NavLink className={styles.navLink} end to="">
-        For Mentor
-      </NavLink>
-      <NavLink className={styles.navLink} to="/client">
-        For Mentee
-      </NavLink>
-      <NavLink className={styles.navLink} to="/corporate">
-        Corporate
-      </NavLink>
-      {/* <NavLink to="/news">News & Community</NavLink> */}
+      <div className="menu-container">
+        <NavLink className="nav-link" end to="/client">
+          Find Mentor
+        </NavLink>
+        <NavLink className="nav-link" to="/">
+          Become a mentor
+        </NavLink>
+        <NavLink className="nav-link" to="/browse-programs">
+          Browse programs
+        </NavLink>
+        <NavLink className="nav-link" to="/how-it-works">
+          How it works
+        </NavLink>
+        <NavLink className="nav-link" to="/faq">
+          FAQ
+        </NavLink>
+        {/* <NavLink to="/news">News & Community</NavLink> */}
 
-      <div>
-        <Button className="sub" onClick={() => navigate('/', { replace: true })}>
-          Login
+        <Button primary={false} onClick={() => navigate('/', { replace: true })}>
+          Sign in
         </Button>
-        <Button onClick={() => navigate('/', { replace: true })}>Join as Mentor</Button>
       </div>
     </nav>
   )
