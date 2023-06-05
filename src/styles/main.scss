@@ -14,6 +14,12 @@
 
 // components
 @import './components/Button.scss';
+@import './components/OverlapingImages';
 
 // pages
-@import './pages/Home';
+@import './pages/HomeSection1';
+@import './pages/CountingtReview';
+@import './pages/HomeSection2';
+@import './pages/HomeSection3';
+@import './pages/TipDetail';
+@import './pages/HomeSection4';

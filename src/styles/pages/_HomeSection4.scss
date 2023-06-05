@@ -1,0 +1,78 @@
+.section-how-to-get-start {
+  display: flex;
+  background-color: &white;
+  justify-content: center;
+  gap: 155px;
+
+  .how-to-get-start {
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 28px;
+    > h2 {
+      // margin-bottom: ;
+      color: $main-black;
+      font-weight: 500;
+    }
+    > .topic {
+      line-height: 150%;
+      letter-spacing: -0.025em;
+      > h3 {
+        line-height: 150%;
+        letter-spacing: -0.025em;
+        color: $gray-primary;
+      }
+      > p {
+        color: $gray-secondary;
+        line-height: 150%;
+      }
+    }
+    > .refund-link {
+      color: $maroon-primary;
+      font-size: 18.7px;
+      line-height: 150%;
+      .check {
+        fill: $maroon-primary;
+        margin-right: 13px;
+      }
+    }
+  }
+  .rigth-image {
+    position: relative;
+    margin-top: 37px;
+    height: 607.62px;
+    width: 398.12px;
+    > .circle {
+      @include circle-large-for-background(424.4px, 424.4px, $yellow);
+      position: absolute;
+      top: 190px;
+      left: -6.18px;
+    }
+    > .circle2 {
+      @include circle-large-for-background(200.18px, 200.18px, $pink);
+      position: absolute;
+      top: 450px;
+      left: 226px;
+      z-index: -1;
+    }
+    > .ellipse {
+      box-sizing: border-box;
+      border-radius: 50%;
+      position: absolute;
+      width: 398.12px;
+      height: 416.67px;
+      left: 39px;
+      top: 166.98px;
+      // bottom: 23px;
+      /* gray/900 */
+
+      border: 2.31915px solid #18181b;
+    }
+    > .main {
+      position: absolute;
+      left: 6.18px;
+      top: 0;
+    }
+  }
+}

@@ -11,7 +11,7 @@ import { Suspense, lazy } from 'react'
 
 const ScrollTopButton = lazy(() => import('./components/ScrollTopButton'))
 const Layout = lazy(() => import('./layouts/Layout'))
-const Home = lazy(() => import('@pages/Home'))
+const Home = lazy(() => import('@pages/Home/Home'))
 const Mentee = lazy(() => import('./pages/Mentee/Mentee'))
 const Corporate = lazy(() => import('./pages/Corporate/Corporate'))
 // const ErrorPage = lazy(() => import('./pages/Error/ErrorPage'))

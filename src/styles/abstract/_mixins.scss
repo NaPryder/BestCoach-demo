@@ -1,3 +1,10 @@
 @mixin logo-default-size() {
   width: 207px;
 }
+
+@mixin circle-large-for-background($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border-radius: 50%;
+}

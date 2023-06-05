@@ -1,0 +1,21 @@
+.tip-detail {
+  > .head {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+    > .stick {
+      width: 4px;
+      height: 20px;
+      background-color: $maroon-primary;
+    }
+    > h3 {
+      line-height: 150%;
+      letter-spacing: -0.025em;
+    }
+  }
+  > p {
+    line-height: 150%;
+    color: $dark-blue-1;
+  }
+}

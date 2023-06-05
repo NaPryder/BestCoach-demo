@@ -1,6 +1,9 @@
 body {
   font-family: $inter-font;
   color: $gray-primary;
+  box-sizing: border-box;
+
+  width: 1600px;
 }
 h1,
 h2,
