@@ -1,5 +1,5 @@
 @mixin logo-default-size() {
-  width: 207px;
+  width: 20.7rem;
 }
 
 @mixin circle-large-for-background($width, $height, $color) {
@@ -7,4 +7,14 @@
   height: $height;
   background-color: $color;
   border-radius: 50%;
+}
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    // 768px
+
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
 }

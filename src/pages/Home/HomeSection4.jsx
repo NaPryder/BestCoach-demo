@@ -1,7 +1,5 @@
 import React from 'react'
 import women from '@/assets/homeSection4_desktop.png'
-import arrowObject from '@/assets/arrow-bg.png'
-import vectorObject from '@/assets/Vector4.png'
 import Check from '@/Icons/Check'
 const HomeSection4 = () => {
   const items = [

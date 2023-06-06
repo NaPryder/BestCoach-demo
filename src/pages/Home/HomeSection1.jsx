@@ -22,7 +22,7 @@ const HomeSection1 = () => {
     },
   ]
   return (
-    <div
+    <section
       className="section-selling-point"
       style={{
         backgroundImage: `url(${bg})`,
@@ -58,7 +58,7 @@ const HomeSection1 = () => {
           </CountingReview>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
