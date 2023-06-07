@@ -1,80 +1,140 @@
 .section-selling-point {
-  // position: relative;
-  margin-top: 86.5px;
-  height: 788px;
-  // height: fit-content;
-  background-color: white;
-  background-repeat: no-repeat;
-  // background-position: center;
-  background-attachment: local;
-  // background-size: cover; /* Resize the background image to cover the entire container */
-}
-.selling-point-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 841px;
-  margin: 23px 380px;
-  > h1 {
-    text-align: center;
-    line-height: 58px;
-    letter-spacing: -0.025em;
-    margin-bottom: 24px;
-  }
-  > p {
-    width: 624px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: center;
-    margin-bottom: 22px;
-  }
-  > button {
-    display: flex;
-    align-items: center;
-    gap: 11.25px;
-    padding: 16px 27px;
-  }
-  .reviews {
-    margin-top: 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    > hr {
-      box-sizing: border-box;
-      width: 2px;
-      background-color: $main-black;
-      height: 39px;
-      border: 1px solid #12141d;
-      opacity: 0.08;
-      margin-right: 27px;
-      margin-left: 42px;
-    }
-    > .happy-mentees {
-      display: flex;
-      gap: 20.44px;
-    }
+  position: relative;
+  margin-top: 8.65rem;
+  // max-height: 78.8rem;
+  background-color: rgb(205, 250, 82);
+  // background-color: white;
 
-    .rating {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      > p {
-        margin-left: 7px;
-      }
-      .star-fill {
-        fill: $yellow-1;
-      }
-      .star-empty {
-        fill: $dark-blue-2;
-        opacity: 0.3;
+  @include media('<=tablet') {
+    margin: 3.8rem 0;
+    // max-width: 486px;
+  }
+  > .image-container {
+    .section-bg {
+      object-fit: none;
+      // width: 100%;
+      // height: 100%;
+      @include media('<=tablet') {
+        // padding-top: 150px;
+        // bottom: 175px;
+        // margin-top: 31.9rem;
       }
     }
   }
-  .selling-point-bg {
-    // position: absolute;
-    height: 917.3px;
-    z-index: -1;
+  > .content-container {
+    border: 2px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include media('<=tablet') {
+      // bottom: 175px;
+    }
+    > .selling-point-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 84.1rem;
+      margin: 2.3rem auto;
+      // margin: 2.3rem 38rem;
+      @include media('<=tablet') {
+        max-width: 100%;
+        // max-width: 48.6rem;
+
+        // margin: 0 auto;
+        margin: 0 1.6rem;
+      }
+      > h1 {
+        text-align: center;
+        line-height: 5.8rem;
+        margin-bottom: 2.4rem;
+        @include media('<=tablet') {
+          line-height: 120%;
+          font-size: 3.2rem;
+        }
+      }
+      > p {
+        max-width: 62.4rem;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-bottom: 2.2rem;
+        @include media('<=tablet') {
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 150%;
+          letter-spacing: -0.025em;
+        }
+      }
+      > button {
+        display: flex;
+        align-items: center;
+        gap: 1.125rem;
+        padding: 1.6rem 2.7rem;
+        font-size: 1.6rem;
+        @include media('<=tablet') {
+          gap: 1.025rem;
+          padding: 1.3rem 1.6rem;
+          font-size: 1.4rem;
+        }
+      }
+      .reviews {
+        margin-top: 3.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media('<=tablet') {
+          flex-direction: column;
+        }
+
+        > .happy-mentees {
+          margin-right: 2.044rem;
+          @include media('<=tablet') {
+            margin-left: 0;
+          }
+        }
+        > .score-container {
+          display: flex;
+
+          @include media('<=tablet') {
+            div {
+              align-items: center;
+            }
+          }
+
+          > hr {
+            box-sizing: border-box;
+            width: 2px;
+            background-color: $main-black;
+            height: 3.9rem;
+            border: 1px solid #12141d;
+            opacity: 0.08;
+            margin-right: 2.7rem;
+            margin-left: 4.2rem;
+            @include media('<=tablet') {
+              margin-right: 1.2rem;
+              margin-left: 1.2rem;
+            }
+          }
+
+          .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            > p {
+              margin-left: 0.7rem;
+            }
+            .star-fill {
+              fill: $yellow-1;
+            }
+            .star-empty {
+              fill: $dark-blue-2;
+              opacity: 0.3;
+            }
+          }
+        }
+      }
+    }
   }
 }

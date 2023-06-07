@@ -21,42 +21,63 @@ const HomeSection1 = () => {
         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
     },
   ]
+
+  const countHappyMentees = 292
+  const ratingScore = 4.8
+
+  function getRatingStar(ratingScore) {
+    const star = Math.floor(ratingScore)
+    return Array(5)
+      .fill(0)
+      .map((_, i) => {
+        return <Star key={i} width="14px" height="13px" className={i + 1 <= star ? 'star-fill' : 'star-empty'} />
+      })
+  }
+
   return (
     <section
       className="section-selling-point"
-      style={{
-        backgroundImage: `url(${bg})`,
-      }}
+      // style={{
+      //   backgroundImage: `url(${bg})`,
+      // }}
     >
-      <div className="selling-point-content">
-        <h1>Unlock Your Career Potential with BestCoach</h1>
-        <p>
-          Gain valuable guidance, insights, and support from industry professionals who are passionate about your
-          success.
-        </p>
-        <Button primary>
-          Browse mentors
-          <ArrowRight width="13.5px" height="10.5px" />
-        </Button>
-        <div className="reviews">
-          <div className="happy-mentees">
-            <OverLapingImages images={images}></OverLapingImages>
-            <CountingReview focusText="299">
-              <p>Happy mentees</p>
-            </CountingReview>
+      <div className="content-container">
+        <div className="selling-point-content">
+          <h1>Unlock Your Career Potential with BestCoach</h1>
+          <p>
+            Gain valuable guidance, insights, and support from industry professionals who are passionate about your
+            success.
+          </p>
+          <Button primary>
+            Browse mentors
+            <ArrowRight width="13.5px" height="10.5px" />
+          </Button>
+          <div className="reviews">
+            <div className="happy-mentees">
+              <OverLapingImages images={images}></OverLapingImages>
+            </div>
+            <div className="score-container">
+              <CountingReview focusText={countHappyMentees}>
+                <p>Happy mentees</p>
+              </CountingReview>
+              <hr />
+              <CountingReview focusText={`${ratingScore}/5`}>
+                <span className="rating">
+                  {getRatingStar(ratingScore)}
+                  {/* <Star width="14px" height="13px" className="star-fill" />
+                  <Star width="14px" height="13px" className="star-fill" />
+                  <Star width="14px" height="13px" className="star-fill" />
+                  <Star width="14px" height="13px" className="star-fill" />
+                  <Star width="14px" height="13px" className="star-empty" /> */}
+                  <p>Rating</p>
+                </span>
+              </CountingReview>
+            </div>
           </div>
-          <hr />
-          <CountingReview focusText="4.8/5">
-            <span className="rating">
-              <Star width="14px" height="13px" className="star-fill" />
-              <Star width="14px" height="13px" className="star-fill" />
-              <Star width="14px" height="13px" className="star-fill" />
-              <Star width="14px" height="13px" className="star-fill" />
-              <Star width="14px" height="13px" className="star-empty" />
-              <p>Rating</p>
-            </span>
-          </CountingReview>
         </div>
+      </div>
+      <div className="image-container">
+        <img className="section-bg" src={bg} alt="section-background" />
       </div>
     </section>
   )

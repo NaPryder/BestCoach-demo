@@ -2,12 +2,13 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 // import '@styles/layouts/Navbar.module.scss'
 import logo from '@/assets/logo-full.png'
 import Button from '@/components/Button'
+import Menubar from '@/Icons/Menubar'
 
 export default function Navbar() {
   const navigate = useNavigate()
 
   return (
-    <nav>
+    <div className="nav-container">
       <Link to="/">
         <img className="logo" src={logo} alt="logo" />
       </Link>
@@ -33,7 +34,10 @@ export default function Navbar() {
         <Button primary={false} onClick={() => navigate('/', { replace: true })}>
           Sign in
         </Button>
+        <div className="menu-bar">
+          <Menubar width="25px" height="12px" />
+        </div>
       </div>
-    </nav>
+    </div>
   )
 }

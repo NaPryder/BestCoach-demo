@@ -7,7 +7,7 @@ import HomeSection4 from './HomeSection4'
 const Home = () => {
   return (
     <>
-      s{/* <HomeSection1 /> */}
+      <HomeSection1 />
       {/* <HomeSection2 />
       <HomeSection3 />
       <HomeSection4 /> */}

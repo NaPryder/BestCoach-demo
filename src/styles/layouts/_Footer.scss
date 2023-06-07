@@ -1,58 +1,100 @@
 footer {
   display: flex;
   flex-direction: column;
-  margin-right: 151px;
-  margin-left: 151px;
+  margin-right: 15.1rem;
+  margin-left: 15.1rem;
+
+  @include media('<=tablet') {
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+  }
+
   .footer-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 27px;
+    @include media('<=tablet') {
+      flex-direction: column;
+    }
 
-    .footer-content {
+    > .footer-content {
       display: flex;
       flex-direction: column;
-      margin: 74.5px 0 0 0;
+      margin: 7.45rem 0 0 0;
       img {
         @include logo-default-size();
       }
-      p {
+      > .desktop-content {
         color: $dary-gray-blue-1;
-        margin-top: 18.5px;
-        width: 281px;
-        line-height: 20px;
+        margin-top: 1.85rem;
+        width: 28.1rem;
+        line-height: 2rem;
+        @include media('<=tablet') {
+          display: none;
+        }
+      }
+      > .mobile-content {
+        display: none;
+        @include media('<=tablet') {
+          margin-top: 1.9rem;
+          display: inline;
+          visibility: visible;
+        }
       }
     }
-    .footer-other-link {
+    > .footer-other-link {
       display: flex;
-      gap: 77px;
-      margin-top: 69px;
-
-      div {
+      gap: 7.7rem;
+      margin-top: 6.9rem;
+      @include media('<=tablet') {
+        margin-top: 3.2rem;
+      }
+      > div {
         display: flex;
         flex-direction: column;
         color: $main-black;
-        strong {
-          font-size: 16px;
+        > .title {
+          font-size: 1.6rem;
           font-weight: 600;
-          margin-bottom: 22px;
+          margin-bottom: 2.2rem;
+          line-height: 2.8rem;
+          @include media('<=tablet') {
+            margin-bottom: 1.2rem;
+          }
         }
 
-        p {
-          font-size: 13px;
-          line-height: 38px;
+        > p {
+          font-size: 1.3rem;
+          line-height: 3.8rem;
           cursor: pointer;
+          @include media('<=tablet') {
+            font-size: 1.4rem;
+            line-height: 254.5%;
+          }
         }
       }
     }
     // p {
     // }
   }
-  hr {
+  > hr {
     border: 1px solid $light-gray-blue-2;
     width: 100%;
+    margin-top: 9.6rem;
+    margin-bottom: 2.7rem;
+    @include media('<=tablet') {
+      margin-top: 3.2rem;
+      margin-bottom: 1.6rem;
+    }
   }
-  .copyright {
-    font-size: 13px;
+  > .copyright {
+    font-size: 1.3rem;
     color: $dary-gray-blue-1;
+    margin-bottom: 5.3rem;
+    line-height: 2rem;
+    @include media('<=tablet') {
+      margin-bottom: 3.2rem;
+      font-size: 1.4rem;
+      line-height: 254.5%;
+    }
   }
 }
