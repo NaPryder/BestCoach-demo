@@ -40,10 +40,6 @@ const HomeSection4 = () => {
         </p>
       </div>
       <div className="rigth-image">
-        <div className="circle" />
-        <div className="circle2" />
-        <div className="ellipse" />
-
         <img className="main" src={women} alt="main" />
       </div>
     </section>

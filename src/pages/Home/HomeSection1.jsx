@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@components/Button'
-import bg from '@/assets/homeSection1_desktop.png'
+import bg from '@/assets/-homeSection1_desktop.png'
+// import bg from '@/assets/homeSection1_desktop.png'
 import CountingReview from './CountingReview'
 import OverLapingImages from '@/components/OverLapingImages'
 import Star from '@/Icons/Star'
@@ -58,7 +59,7 @@ const HomeSection1 = () => {
             </div>
             <div className="score-container">
               <CountingReview focusText={countHappyMentees}>
-                <p>Happy mentees</p>
+                <p className="score-title">Happy mentees</p>
               </CountingReview>
               <hr />
               <CountingReview focusText={`${ratingScore}/5`}>
@@ -69,7 +70,7 @@ const HomeSection1 = () => {
                   <Star width="14px" height="13px" className="star-fill" />
                   <Star width="14px" height="13px" className="star-fill" />
                   <Star width="14px" height="13px" className="star-empty" /> */}
-                  <p>Rating</p>
+                  <p className="score-title">Rating</p>
                 </span>
               </CountingReview>
             </div>

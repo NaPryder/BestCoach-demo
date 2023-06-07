@@ -5,7 +5,7 @@ const TipDetail = ({ headTitle, children, ...props }) => {
         <div className="stick"></div>
         <h3>{headTitle}</h3>
       </div>
-      <p>{children}</p>
+      {children}
     </div>
   )
 }

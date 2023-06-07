@@ -6,8 +6,12 @@
     border: 3px solid $white;
     border-radius: 50%;
     overflow: hidden;
-    width: 60.52px;
-    height: 60.52px;
+    width: 6.052rem;
+    height: 6.052rem;
+    @include media('<=tablet') {
+      width: 3.639rem;
+      height: 3.639rem;
+    }
 
     > img {
       display: block;
@@ -16,8 +20,10 @@
       object-fit: cover;
     }
     &:not(:last-child) {
-      // margin-left: -23px;
-      margin-left: -30.52px;
+      margin-left: -3.052rem;
+      @include media('<=tablet') {
+        margin-left: -1.383rem;
+      }
     }
   }
 }

@@ -1,32 +1,41 @@
 .section-selling-point {
   position: relative;
   margin-top: 8.65rem;
-  // max-height: 78.8rem;
-  background-color: rgb(205, 250, 82);
-  // background-color: white;
+  background-color: white;
+  min-height: 56.3rem;
 
   @include media('<=tablet') {
-    margin: 3.8rem 0;
+    margin: 3.8rem 0 0;
     // max-width: 486px;
+    // max-height: 56.3rem;
+    // height: 62.3rem;
+    height: auto;
   }
   > .image-container {
+    // border: 1px solid blue;
+    min-width: 48.6rem;
+    margin-top: -48rem;
+    @include media('<=tablet') {
+      margin-top: -10.3rem;
+    }
+    // position: absolute;
+    // bottom: 0;
+    // top: 0;
+    // @include media('<=tablet') {
+    //   top: 320px;
+    // }
     .section-bg {
-      object-fit: none;
-      // width: 100%;
-      // height: 100%;
+      object-fit: contain;
       @include media('<=tablet') {
-        // padding-top: 150px;
-        // bottom: 175px;
-        // margin-top: 31.9rem;
+        width: 100%;
       }
     }
   }
   > .content-container {
-    border: 2px solid red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    // border: 2px solid red;
+    // top: 0;
+    // left: 0;
+    // right: 0;
     @include media('<=tablet') {
       // bottom: 175px;
     }
@@ -86,6 +95,7 @@
         justify-content: center;
         @include media('<=tablet') {
           flex-direction: column;
+          gap: 8px;
         }
 
         > .happy-mentees {
@@ -100,9 +110,19 @@
           @include media('<=tablet') {
             div {
               align-items: center;
+              .title {
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                letter-spacing: -0.60124px;
+              }
             }
           }
-
+          .score-title {
+            @include media('<=tablet') {
+              font-size: 1rem;
+              line-height: 14px;
+            }
+          }
           > hr {
             box-sizing: border-box;
             width: 2px;
@@ -125,12 +145,15 @@
             > p {
               margin-left: 0.7rem;
             }
-            .star-fill {
+
+            > .star-fill {
               fill: $yellow-1;
+              @include base-star();
             }
-            .star-empty {
+            > .star-empty {
               fill: $dark-blue-2;
               opacity: 0.3;
+              @include base-star();
             }
           }
         }

@@ -1,17 +1,13 @@
 import React from 'react'
-import men from '@/assets/homeSection3_desktop.png'
-import arrowObject from '@/assets/arrow-bg.png'
-import vectorObject from '@/assets/Vector4.png'
+// import men from '@/assets/homeSection3_desktop.png'
+import men from '@/assets/homeSection3_mobile.png'
 import TipDetail from './TipDetail'
 
 const HomeSection3 = () => {
   return (
     <section className="section-expert-tips">
       <div className="left-image">
-        <div className="circle" />
         <img className="main" src={men} alt="main" />
-        <img className="arrow" src={arrowObject} alt="arrow-object" />
-        <img className="vector" src={vectorObject} alt="vector-object" />
       </div>
       <div className="expert-tips">
         <h2>Expert Tips Just One Click Away.</h2>

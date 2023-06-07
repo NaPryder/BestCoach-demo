@@ -1,55 +1,59 @@
 .section-expert-tips {
   display: flex;
   justify-content: center;
-  height: 611px;
   background-color: $very-light-gray;
-  // background-color: rgb(186, 189, 192);
-  gap: 122px;
+  background-color: rgb(186, 189, 192);
+  gap: 12.2rem;
+  // padding-left: 1.6rem;
+  // padding-right: 1.6rem;
+
+  // padding: ;
+  @include media('<=tablet') {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
 
   .left-image {
-    position: relative;
-    // width: 509px;
-    margin-top: 45.33px;
-    margin-left: 253px;
-    width: 479.9px;
-
-    > .circle {
-      @include circle-large-for-background(431.5px, 431.5px, $yellow);
-      position: absolute;
-      top: 167.35px;
-    }
-    > .circle::after {
-      content: ' ';
-      height: 50px;
-      width: 431.5px;
-      // border: 5px solid green;
-      background-color: $white;
-      position: absolute;
-      bottom: 0;
-    }
-    > .arrow {
-      position: absolute;
-      top: 259.8px;
-      margin-left: -39.6px;
-      transform: matrix(1, -0.05, -0.05, 1, 0, 0);
-    }
-    > .vector {
-      position: absolute;
-      top: 225px;
-      right: 80px;
+    margin-top: 4.533rem;
+    width: 50.9rem;
+    height: 56.5rem;
+    @include media('<=tablet') {
+      margin: 6.4rem 1.6rem 0;
+      width: auto;
+      height: auto;
     }
     > .main {
-      position: absolute;
-      top: 0;
-      margin-left: auto;
-      margin-right: 0;
+      height: 100%;
+      width: 100%;
+      object-position: top;
+      object-fit: cover;
+      @include media('<=tablet') {
+        object-fit: contain;
+      }
     }
   }
   .expert-tips {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    margin-top: 89px;
-    gap: 32px;
+    width: 60rem;
+    margin-top: 8.9rem;
+    min-width: 28.8rem;
+    gap: 3.2rem;
+    @include media('<=tablet') {
+      margin: 0 1.6rem 6.4rem;
+
+      // width: 28.8rem;
+      // margin: 0 1.6rem;
+
+      width: auto;
+      max-width: calc(100% - 1.6rem * 2);
+    }
+    > h2 {
+      color: $main-black;
+    }
+    h3 {
+      color: $dark-blue-0;
+    }
   }
 }
