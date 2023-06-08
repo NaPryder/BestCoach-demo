@@ -1,0 +1,17 @@
+div[class^='tag-'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 12px;
+  border-radius: 12px;
+
+  &.tag-green {
+    background-color: $light-green;
+    color: $dark-green;
+  }
+
+  &.tag-blue {
+    background-color: $ligth-blue;
+    color: $blue;
+  }
+}

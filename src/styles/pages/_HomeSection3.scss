@@ -14,7 +14,7 @@
     gap: 3.2rem;
   }
 
-  .left-image {
+  > .person-image-container {
     margin-top: 4.533rem;
     width: 50.9rem;
     height: 56.5rem;
@@ -23,7 +23,7 @@
       width: auto;
       height: auto;
     }
-    > .main {
+    > img {
       height: 100%;
       width: 100%;
       object-position: top;
@@ -33,7 +33,7 @@
       }
     }
   }
-  .expert-tips {
+  > .expert-tips {
     display: flex;
     flex-direction: column;
     width: 60rem;

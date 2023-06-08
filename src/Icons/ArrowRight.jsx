@@ -1,32 +1,25 @@
+import PropTypes from 'prop-types'
+
 function ArrowRight({ className, width, height, ...props }) {
   return (
-    <>
-      {/* <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" {...props}>
-        <path
-          fillRule="evenodd"
-          d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-        />
-      </svg> */}
-
-      <svg
-        className={className}
-        width={width ? width : '17px'}
-        height={height ? height : '14px'}
-        viewBox="0 0 17 14"
-        // fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          id="Icon"
-          d="M10 1.75L15.25 7M15.25 7L10 12.25M15.25 7L1.75 7"
-          stroke="#F9FAFB"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </>
+    <svg
+      className={`${className} icon-arrow-default`}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      height={height ? `${height + 2}px` : '20px'}
+      width={width ? `${width + 2}px` : '20px'}
+      {...props}
+    >
+      <path
+        d="M18.59 13H3a1 1 0 010-2h15.59l-5.3-5.3a1 1 0 111.42-1.4l7 7a1 1 0 010 1.4l-7 7a1 1 0 01-1.42-1.4l5.3-5.3z"
+        stroke="currentColor"
+      />
+    </svg>
   )
+}
+ArrowRight.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
 }
 
 export default ArrowRight

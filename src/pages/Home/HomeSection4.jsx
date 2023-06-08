@@ -39,8 +39,8 @@ const HomeSection4 = () => {
           30 days refund available
         </p>
       </div>
-      <div className="rigth-image">
-        <img className="main" src={women} alt="main" />
+      <div className="person-image-container">
+        <img src={women} alt="person-image" />
       </div>
     </section>
   )

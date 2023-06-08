@@ -1,14 +1,10 @@
 .section-selling-point {
-  position: relative;
   margin-top: 8.65rem;
   background-color: white;
   min-height: 56.3rem;
 
   @include media('<=tablet') {
     margin: 3.8rem 0 0;
-    // max-width: 486px;
-    // max-height: 56.3rem;
-    // height: 62.3rem;
     height: auto;
   }
   > .image-container {
@@ -18,12 +14,7 @@
     @include media('<=tablet') {
       margin-top: -10.3rem;
     }
-    // position: absolute;
-    // bottom: 0;
-    // top: 0;
-    // @include media('<=tablet') {
-    //   top: 320px;
-    // }
+
     .section-bg {
       object-fit: contain;
       @include media('<=tablet') {
@@ -32,12 +23,9 @@
     }
   }
   > .content-container {
-    // border: 2px solid red;
-    // top: 0;
-    // left: 0;
-    // right: 0;
+    position: relative;
+
     @include media('<=tablet') {
-      // bottom: 175px;
     }
     > .selling-point-content {
       display: flex;
@@ -45,12 +33,8 @@
       align-items: center;
       max-width: 84.1rem;
       margin: 2.3rem auto;
-      // margin: 2.3rem 38rem;
       @include media('<=tablet') {
         max-width: 100%;
-        // max-width: 48.6rem;
-
-        // margin: 0 auto;
         margin: 0 1.6rem;
       }
       > h1 {
@@ -76,18 +60,18 @@
           letter-spacing: -0.025em;
         }
       }
-      > button {
-        display: flex;
-        align-items: center;
-        gap: 1.125rem;
-        padding: 1.6rem 2.7rem;
-        font-size: 1.6rem;
-        @include media('<=tablet') {
-          gap: 1.025rem;
-          padding: 1.3rem 1.6rem;
-          font-size: 1.4rem;
-        }
-      }
+      // > button {
+      //   display: flex;
+      //   align-items: center;
+      //   gap: 1.125rem;
+      //   padding: 1.6rem 2.7rem;
+      //   font-size: 1.6rem;
+      //   @include media('<=tablet') {
+      //     gap: 1.025rem;
+      //     padding: 1.3rem 1.6rem;
+      //     font-size: 1.4rem;
+      //   }
+      // }
       .reviews {
         margin-top: 3.2rem;
         display: flex;

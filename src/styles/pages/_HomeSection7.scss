@@ -1,0 +1,144 @@
+.section-mentee-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $very-light-gray;
+  background-color: #6e6a6a;
+  gap: 6.4rem;
+  padding: 7.1rem 1.6rem;
+  > .world-class-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    max-width: 104.1rem;
+    @include media('<=tablet') {
+      gap: 1.6rem;
+    }
+
+    > .company-logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2.4rem;
+
+      > .company {
+        background-color: $white;
+        // width: 18.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #eae9f2;
+        border-radius: 5px;
+
+        @include media('<=tablet') {
+          width: 13.6rem;
+        }
+        > .image-container {
+          width: 15.17rem;
+          height: 3.2rem;
+          margin: 1.55rem 1.865rem;
+          background-repeat: no-repeat;
+          background-size: cover;
+          @include media('<=tablet') {
+            margin: 1.55rem 1.6rem;
+            // width: 100%;
+            // width: 10.4rem;
+            height: 3.2rem;
+          }
+          > img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+          }
+        }
+      }
+    }
+  }
+  > .want-to-be-mentor {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 129.5rem;
+    height: 16.6rem;
+    background-color: $yellow;
+    border-radius: 10px;
+    @include media('<=tablet') {
+      flex-direction: column;
+      gap: 0;
+      height: auto;
+      padding: 2.8rem 3.3rem;
+    }
+    > .topic {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 4.2rem;
+      gap: 2.5rem;
+
+      @include media('<=tablet') {
+        gap: 1.6rem;
+        margin: 0 auto 1.6rem;
+      }
+      > h2 {
+        @include media('<=tablet') {
+          font-size: 2.3rem;
+          line-height: 150%;
+        }
+      }
+      > .why-to-join {
+        display: flex;
+        gap: 3.2rem;
+        @include media('<=tablet') {
+          flex-direction: column;
+          gap: 1.2rem;
+        }
+        > .checking-item {
+          background: none;
+          padding: 0;
+          border: none;
+          gap: 1.2rem;
+          > .box {
+            background-color: $maroon-primary;
+            width: 2.4rem;
+            height: 2.4rem;
+            > .check {
+              fill: $yellow;
+            }
+          }
+        }
+      }
+    }
+    > .registration {
+      display: flex;
+      gap: 1.763rem;
+      margin-right: 4.65rem;
+      align-items: center;
+      @include media('<=tablet') {
+        flex-direction: column;
+        gap: 1.6rem;
+        margin-right: 0;
+      }
+      // margin: 5.7rem 4.65rem 5.8rem;
+      > .overlap-images {
+        .image-container {
+          width: 5.539rem;
+          height: 5.539rem;
+          border: 3px solid $yellow;
+          &:not(:last-child) {
+            margin-left: -2.105rem;
+            // @include media('<=tablet') {
+            //   margin-left: -1.383rem;
+            // }
+          }
+        }
+      }
+      > button {
+        padding: 1.2rem 2.3rem;
+        font-size: 1.4rem;
+        line-height: 20px;
+        height: 5.1rem;
+      }
+    }
+  }
+}

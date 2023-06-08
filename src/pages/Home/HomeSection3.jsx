@@ -6,8 +6,8 @@ import TipDetail from './TipDetail'
 const HomeSection3 = () => {
   return (
     <section className="section-expert-tips">
-      <div className="left-image">
-        <img className="main" src={men} alt="main" />
+      <div className="person-image-container">
+        <img src={men} alt="person-image" />
       </div>
       <div className="expert-tips">
         <h2>Expert Tips Just One Click Away.</h2>
