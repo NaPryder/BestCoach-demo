@@ -5,7 +5,6 @@ import Button from '@/components/Button'
 import Arrow from '@/Icons/Arrow'
 
 const HomeSection6 = () => {
-  console.log('mentors :>> ', mentors)
   return (
     <section className="section-discover-mentor">
       <div className="header">
@@ -18,9 +17,9 @@ const HomeSection6 = () => {
         </div>
       </div>
       <div className="card-container">
-        {mentors.map((mentor, i) => {
-          return <Card key={i} profile={mentor} />
-        })}
+        {mentors.map(mentor => (
+          <Card profile={mentor} key={mentor.id} />
+        ))}
       </div>
 
       <Button primary size="lg">

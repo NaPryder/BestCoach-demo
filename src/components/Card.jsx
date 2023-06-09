@@ -2,6 +2,7 @@ import React from 'react'
 import Tag from './Tag'
 import Education from '@/Icons/Education'
 import Occupation from '@/Icons/Occupation'
+import PropTypes from 'prop-types'
 
 const Card = ({ profile, ...props }) => {
   return (
@@ -22,8 +23,8 @@ const Card = ({ profile, ...props }) => {
         </span>
         <div className="tags">
           {profile?.tags &&
-            profile.tags.map(tag => {
-              return <Tag key={tag} title={tag.title} color={tag.color} />
+            profile.tags.map((tag, i) => {
+              return <Tag key={i} title={tag.title} color={tag.color} />
             })}
         </div>
       </div>
@@ -46,6 +47,10 @@ const Card = ({ profile, ...props }) => {
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  profile: PropTypes.object,
 }
 
 export default Card

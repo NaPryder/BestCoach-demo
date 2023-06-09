@@ -4,6 +4,16 @@ div[class^='tag-'] {
   align-items: center;
   padding: 2px 12px;
   border-radius: 12px;
+  @include media('<=tablet') {
+    padding: 1.5px 9px;
+  }
+  > p {
+    font-weight: 500;
+    @include media('<=tablet') {
+      font-size: 1.4rem;
+      line-height: 20px;
+    }
+  }
 
   &.tag-green {
     background-color: $light-green;

@@ -1,8 +1,7 @@
 import React from 'react'
 import CheckItem from './CheckItem'
 import Button from '@/components/Button'
-import ArrowRight from '@/Icons/ArrowRight'
-import ArrowRightOld from '@/Icons/ArrowRightOld'
+import Arrow from '@/Icons/Arrow'
 const HomeSection5 = () => {
   return (
     <section className="section-things-you-can-learn">
@@ -38,9 +37,7 @@ const HomeSection5 = () => {
       </div>
       <Button primary size="lg">
         Browse all programs
-        <ArrowRight width={17} height={14} />
-        {/* <ArrowRight width="19px" height="16px" /> */}
-        <ArrowRightOld />
+        <Arrow direction="right" width={13.5} height={10.5} />
       </Button>
     </section>
   )

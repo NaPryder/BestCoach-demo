@@ -5,9 +5,8 @@ import bg from '@/assets/-homeSection1_desktop.png'
 import CountingReview from './CountingReview'
 import OverLapingImages from '@/components/OverLapingImages'
 import Star from '@/Icons/Star'
-import ArrowRight from '@/Icons/ArrowRight'
-import ArrowRightOld from '@/Icons/ArrowRightOld'
 import { menteeImages } from './data'
+import Arrow from '@/Icons/Arrow'
 
 const HomeSection1 = () => {
   const countHappyMentees = 292
@@ -38,8 +37,7 @@ const HomeSection1 = () => {
           </p>
           <Button primary size="lg">
             Browse mentors
-            <ArrowRight width={13.5} height={10.5} />
-            <ArrowRightOld width={13.5} height={10.5} />
+            <Arrow direction="right" width={13.5} height={10.5} />
           </Button>
           <div className="reviews">
             <div className="happy-mentees">

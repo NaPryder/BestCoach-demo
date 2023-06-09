@@ -41,6 +41,7 @@
       }
     }
     > .refund-link {
+      cursor: pointer;
       color: $maroon-primary;
       font-size: 1.87rem;
       @include media('<=tablet') {

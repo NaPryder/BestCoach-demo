@@ -6,9 +6,18 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 0;
+  width: 35.2rem;
+  @include media('<=tablet') {
+    width: 23.446rem;
+  }
+
   > .profile-image {
     height: 22.2rem;
-    width: 35.2rem;
+    width: 100%;
+    @include media('<=tablet') {
+      height: 16.8rem;
+      width: 23.446rem;
+    }
 
     > img {
       height: 100%;
@@ -22,8 +31,13 @@
     display: flex;
     flex-direction: column;
     padding: 1.6rem 2.4rem 2.4rem;
-
     gap: 1.4rem;
+
+    @include media('<=tablet') {
+      padding: 1.2rem 1.89rem 1.89rem;
+      gap: 1rem;
+    }
+
     > span {
       display: flex;
       gap: 1rem;
