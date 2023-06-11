@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { getCompany, menteeImages, meteeReviews } from './data'
+import { companyImages, getCompany, menteeImages, meteeReviews } from './data'
 import OverLapingImages from '@/components/OverLapingImages'
 import Button from '@/components/Button'
 import CheckItem from './CheckItem'
@@ -7,7 +7,8 @@ import MenteeReview from './MenteeReview'
 import useWindowResize from '@/hooks/useWindowResize'
 
 const HomeSection7 = () => {
-  const images = getCompany()
+  // const images = getCompany()
+  const images = companyImages
   const [height, width] = useWindowResize()
 
   return (

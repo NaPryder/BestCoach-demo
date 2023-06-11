@@ -152,10 +152,21 @@ export const mentors = [
 ]
 
 export const getCompany = () => {
-  const imageContext = import.meta.glob('@/assets/companies/comp-*.(png|jpe?g|svg)')
+  const imageContext = import.meta.glob('/comp-*.(png|jpe?g|svg)')
 
   return Object.keys(imageContext)
 }
+export const companyImages = [
+  '/comp-1-BCG.png',
+  '/comp-2-Meta.png',
+  '/comp-3-INSEAD.png',
+  '/comp-4-MS.png',
+  '/comp-5-DeutscheBank.png',
+  '/comp-6-Kearney.png',
+  '/comp-7-Petronas.png',
+  '/comp-8-ICF.png',
+  '/comp-9-Paypal.png',
+]
 
 export const menteeImages = [
   {
