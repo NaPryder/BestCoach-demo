@@ -1,0 +1,42 @@
+{
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.multiCursorModifier": "alt",
+  "editor.rename.enablePreview": false,
+  "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 120,
+  "prettier.quoteProps": "consistent",
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 120,
+  "editor.rulers": [
+    120
+  ],
+  "[jsx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "html.format.wrapLineLength": 120,
+  "git.enableSmartCommit": true,
+}
