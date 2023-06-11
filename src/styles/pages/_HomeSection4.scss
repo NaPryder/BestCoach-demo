@@ -1,0 +1,77 @@
+.section-how-to-get-start {
+  display: flex;
+  background-color: $white;
+  justify-content: center;
+  gap: 15.5rem;
+  margin-bottom: 3.986rem;
+  @include media('<=tablet') {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 3.2rem;
+  }
+
+  > .how-to-get-start {
+    margin-top: 11.6rem;
+    margin-left: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    gap: 2.8rem;
+    @include media('<=tablet') {
+      margin: 3.2rem 1.6rem 0;
+      width: auto;
+      gap: 3.2rem;
+    }
+    > h2 {
+      color: $main-black;
+    }
+    > .topic {
+      > h3 {
+        line-height: 150%;
+        letter-spacing: -0.025em;
+        color: $gray-primary;
+        margin-bottom: 1.756rem;
+        @include media('<=tablet') {
+          margin-bottom: 1.5rem;
+        }
+      }
+      > p {
+        color: $gray-secondary;
+      }
+    }
+    > .refund-link {
+      cursor: pointer;
+      color: $maroon-primary;
+      font-size: 1.87rem;
+      @include media('<=tablet') {
+        margin-top: -0.8rem;
+        font-size: 1.6rem;
+      }
+      .check {
+        fill: $maroon-primary;
+        margin-right: 1.3rem;
+
+        @include media('<=tablet') {
+          margin-right: 1.1rem;
+          width: 1.4rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+  > .person-image-container {
+    margin-top: 3.7rem;
+    margin-right: 1.6rem;
+    height: 60.762rem;
+    @include media('<=tablet') {
+      margin-top: 3.2rem;
+      margin: 3.2rem 1.6rem 0;
+      height: 29.73rem;
+    }
+    > img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.section-things-you-can-learn {
+  background-color: $very-light-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.1rem;
+  padding: 7.1rem 0 7.3rem;
+  @include media('<=tablet') {
+    gap: 3.2rem;
+    padding: 3.2rem 0;
+  }
+  > .heading {
+    text-align: center;
+    @include media('<=tablet') {
+      margin: 0 1.6rem;
+    }
+    > h2 {
+      margin-bottom: 3.2rem;
+      @include media('<=tablet') {
+        line-height: 150%;
+        font-size: 2.3rem;
+      }
+    }
+    > p {
+      opacity: 0.7;
+    }
+  }
+
+  > .learning-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 105rem;
+    gap: 3.2rem;
+    margin: 0 1.6rem 1.1rem;
+
+    @include media('<=tablet') {
+      flex-wrap: nowrap;
+      flex-direction: column;
+
+      gap: 1.4rem;
+      margin: 0 1.6rem;
+    }
+    > div {
+      &:not(:nth-child(4), :nth-child(5)) {
+        flex: 0 0 calc(33.33% - 3.2rem);
+      }
+      > .checking-item {
+        max-width: 32.8rem;
+      }
+    }
+
+    // Middle row (select 4th and 5th child)
+    > div:nth-child(4) {
+      flex: 0 1 calc(50% - 2rem);
+      > .checking-item {
+        margin-right: 0.4rem;
+        margin-left: auto;
+        @include media('<=tablet') {
+          margin-right: auto;
+        }
+      }
+    }
+    > div:nth-child(5) {
+      flex: 0 1 calc(50% - 2rem);
+      > .checking-item {
+        margin-left: 0.4rem;
+        margin-right: auto;
+        @include media('<=tablet') {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  > button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    > svg {
+      @include media('<=tablet') {
+        display: none;
+      }
+    }
+  }
+}

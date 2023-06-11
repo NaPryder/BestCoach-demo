@@ -1,0 +1,16 @@
+.tip-detail {
+  > .head {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+    > .stick {
+      width: 4px;
+      height: 20px;
+      background-color: $maroon-primary;
+    }
+  }
+  > p {
+    color: $dark-blue-1;
+  }
+}

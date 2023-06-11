@@ -1,0 +1,35 @@
+// this fgile use only import scss
+// base
+@import './base/base';
+@import './base/typography';
+@import './base/breakpoint';
+
+// abstract
+@import './abstract/variables';
+@import './abstract/mixins';
+
+// layouts
+@import './layouts/App.scss';
+@import './layouts/Navbar.scss';
+@import './layouts/Footer.scss';
+
+// components
+@import './components/Button.scss';
+@import './components/OverlapingImages';
+@import './components/Arrow';
+@import './components/Card';
+@import './components/Tag';
+@import './components/ProfileCircleImage';
+
+// pages
+@import './pages/HomeSection1';
+@import './pages/CountingtReview';
+@import './pages/HomeSection2';
+@import './pages/HomeSection3';
+@import './pages/TipDetail';
+@import './pages/HomeSection4';
+@import './pages/HomeSection5';
+@import './pages/CheckItem';
+@import './pages/HomeSection6';
+@import './pages/HomeSection7';
+@import './pages/MenteeReview';

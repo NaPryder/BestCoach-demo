@@ -1,0 +1,42 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.25rem 12.8rem 3.2rem 12.8rem;
+  @include media('<=tablet') {
+    margin: 1.2rem 1.6rem;
+  }
+
+  > .logo {
+    @include logo-default-size();
+  }
+
+  > .menu-container {
+    display: flex;
+    gap: 4.5rem;
+    align-items: center;
+    visibility: visible;
+
+    > .nav-link,
+    > .btn {
+      @include media('<=tablet') {
+        display: none;
+      }
+    }
+    > .nav-link {
+      color: $dark-blue-0;
+    }
+
+    > .btn {
+      padding: 0.625rem 2rem;
+    }
+  }
+  .menu-bar {
+    visibility: hidden;
+    display: none;
+    @include media('<=tablet') {
+      display: inline;
+      visibility: visible;
+    }
+  }
+}

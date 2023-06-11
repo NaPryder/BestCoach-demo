@@ -1,0 +1,120 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid $very-light-gray-3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+  width: 35.2rem;
+  @include media('<=tablet') {
+    width: 23.446rem;
+  }
+
+  > .profile-image {
+    height: 22.2rem;
+    width: 100%;
+    @include media('<=tablet') {
+      height: 16.8rem;
+      width: 23.446rem;
+    }
+
+    > img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  > .prodile-detail {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    margin: 1.6rem 2.4rem 2.4rem;
+    gap: 1.4rem;
+
+    @include media('<=tablet') {
+      margin: 1.2rem 1.819rem 1.819rem;
+      gap: 1rem;
+    }
+    > h3 {
+      @include media('<=tablet') {
+        font-size: 1.8rem;
+      }
+    }
+    > span {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include media('<=tablet') {
+        gap: 0.7rem;
+      }
+      > .occupation-icon {
+        @include media('<=tablet') {
+          width: 1.263rem;
+          height: 1.2rem;
+        }
+      }
+      > .education-icon {
+        @include media('<=tablet') {
+          width: 1.32rem;
+          height: 1.11rem;
+        }
+      }
+      > p {
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark-gray-blue-0;
+        @include media('<=tablet') {
+          font-size: 1.079rem;
+        }
+      }
+    }
+    > .tags {
+      display: flex;
+      gap: 8px;
+      @include media('<=tablet') {
+        gap: 6px;
+      }
+    }
+  }
+  > .profile-footer {
+    display: flex;
+    background-color: $very-light-gray-2;
+    border-top: 1px solid #e5e7eb;
+    padding: 1.9rem 2.4rem;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    @include media('<=tablet') {
+      padding: 1.44rem 1.65rem;
+
+      gap: 1.2rem;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > p {
+        @include media('<=tablet') {
+          font-size: 1.2rem;
+        }
+      }
+      > .key {
+        color: $gray-secondary;
+      }
+      > p:last-child {
+        font-weight: 500;
+        color: $gray-primary;
+      }
+    }
+    > hr {
+      height: 2.5rem;
+      border: 1px solid $light-gray-blue-0;
+      @include media('<=tablet') {
+        height: 1.895rem;
+      }
+    }
+  }
+}
