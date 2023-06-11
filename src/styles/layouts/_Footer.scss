@@ -38,6 +38,7 @@ footer {
           margin-top: 1.9rem;
           display: inline;
           visibility: visible;
+          opacity: 0.7;
         }
       }
     }
@@ -47,6 +48,7 @@ footer {
       margin-top: 6.9rem;
       @include media('<=tablet') {
         margin-top: 3.2rem;
+        gap: 3rem;
       }
       > div {
         display: flex;

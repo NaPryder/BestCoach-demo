@@ -10,7 +10,7 @@ div[class^='tag-'] {
   > p {
     font-weight: 500;
     @include media('<=tablet') {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       line-height: 20px;
     }
   }

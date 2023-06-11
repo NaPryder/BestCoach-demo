@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import Button from '@components/Button'
 import bg from '@/assets/-homeSection1_desktop.png'
 // import bg from '@/assets/homeSection1_desktop.png'
 import CountingReview from './CountingReview'
-import OverLapingImages from '@/components/OverLapingImages'
+// import OverLapingImages from '@/components/OverLapingImages'
 import Star from '@/Icons/Star'
 import { menteeImages } from './data'
 import Arrow from '@/Icons/Arrow'
+
+const OverLapingImages = lazy(() => import('@/components/OverLapingImages'))
 
 const HomeSection1 = () => {
   const countHappyMentees = 292
@@ -41,7 +43,9 @@ const HomeSection1 = () => {
           </Button>
           <div className="reviews">
             <div className="happy-mentees">
-              <OverLapingImages images={menteeImages}></OverLapingImages>
+              <Suspense fallback={'loading'}>
+                <OverLapingImages images={menteeImages}></OverLapingImages>
+              </Suspense>
             </div>
             <div className="score-container">
               <CountingReview focusText={countHappyMentees}>

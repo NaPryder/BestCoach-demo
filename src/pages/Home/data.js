@@ -8,7 +8,7 @@ export const mentors = [
     occupation: 'Leadership Management (INSEAD)',
     tags: [
       {
-        title: 'Verifiled',
+        title: 'Verified',
         color: 'green',
       },
       {
@@ -33,7 +33,7 @@ export const mentors = [
     occupation: 'Leadership Management (INSEAD)',
     tags: [
       {
-        title: 'Verifiled',
+        title: 'Verified',
         color: 'green',
       },
       {
@@ -58,7 +58,7 @@ export const mentors = [
     occupation: 'Leadership Management (INSEAD)',
     tags: [
       {
-        title: 'Verifiled',
+        title: 'Verified',
         color: 'green',
       },
       {
@@ -83,7 +83,7 @@ export const mentors = [
     occupation: 'Leadership Management (INSEAD)',
     tags: [
       {
-        title: 'Verifiled',
+        title: 'Verified',
         color: 'green',
       },
       {
@@ -108,7 +108,7 @@ export const mentors = [
     occupation: 'Leadership Management (INSEAD)',
     tags: [
       {
-        title: 'Verifiled',
+        title: 'Verified',
         color: 'green',
       },
       {
@@ -133,7 +133,7 @@ export const mentors = [
     occupation: 'Leadership Management (INSEAD)',
     tags: [
       {
-        title: 'Verifiled',
+        title: 'Verified',
         color: 'green',
       },
       {
@@ -152,7 +152,7 @@ export const mentors = [
 ]
 
 export const getCompany = () => {
-  const imageContext = import.meta.glob('@/assets/companies/*.(png|jpe?g|svg)')
+  const imageContext = import.meta.glob('@/assets/companies/comp-*.(png|jpe?g|svg)')
 
   return Object.keys(imageContext)
 }
@@ -177,5 +177,35 @@ export const menteeImages = [
     id: 34,
     image:
       'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  },
+]
+
+export const meteeReviews = [
+  {
+    id: 1,
+    image:
+      'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    name: 'Jerome Bell',
+    occupation: 'Product Manager',
+    review:
+      'I found an amazing mentor who guided me every step of the way. Their insights and support were invaluable, and I successfully landed my dream job.',
+  },
+  {
+    id: 2,
+    image:
+      'https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80',
+    name: 'Leslie Alexander',
+    occupation: 'CRM Marketing',
+    review:
+      'Through our online sessions, I gained valuable advice and practical strategies to overcome challenges and advance in my career.',
+  },
+  {
+    id: 3,
+    image:
+      'https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    name: 'Wade Warren',
+    occupation: 'Founder',
+    review:
+      'I was looking to enhance my leadership skills, and MentorConnect paired me with a mentor who had a wealth of experience in that area.',
   },
 ]

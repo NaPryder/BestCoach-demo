@@ -3,53 +3,91 @@
   flex-direction: column;
   align-items: center;
   background-color: $very-light-gray;
-  background-color: #6e6a6a;
-  gap: 6.4rem;
+  gap: 3.2rem;
   padding: 7.1rem 1.6rem;
+  @include media('<=tablet') {
+    padding: 3.2rem 1.6rem;
+  }
+  > h2 {
+    color: $main-black;
+    text-align: center;
+  }
+  > .mentee-container {
+    background-color: $white;
+    border: 1px solid $very-light-gray-1;
+    border-radius: 5px;
+    display: flex;
+    max-width: 126.8rem;
+    padding: 3.3rem 4.9rem;
+    gap: 4.5rem;
+    @include media('<=tablet') {
+      flex-direction: column;
+      padding: 2.4rem 1.6rem;
+      gap: 3.2rem;
+    }
+    > hr {
+      border: 1px solid $light-gray-blue-2;
+    }
+  }
   > .world-class-company {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
     max-width: 104.1rem;
+    margin-top: 3.2rem;
     @include media('<=tablet') {
       gap: 1.6rem;
+      margin-left: auto;
+      margin-right: auto;
     }
-
+    > p {
+      font-size: 1.8rem;
+      line-height: 28px;
+      color: $main-black;
+      opacity: 0.7;
+      text-align: center;
+    }
     > .company-logos {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 2.4rem;
+      @include media('<=tablet') {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
+      }
 
       > .company {
         background-color: $white;
-        // width: 18.9rem;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid #eae9f2;
         border-radius: 5px;
-
+        width: 18.9rem;
+        height: 6.3rem;
+        // padding: 1.54rem 1.855rem;
         @include media('<=tablet') {
-          width: 13.6rem;
+          padding: 1.49rem 1.59rem;
+          width: auto;
+          height: auto;
+          // width: 13.6rem;
+          height: 6.3rem;
         }
         > .image-container {
           width: 15.17rem;
-          height: 3.2rem;
-          margin: 1.55rem 1.865rem;
-          background-repeat: no-repeat;
-          background-size: cover;
+          height: auto;
           @include media('<=tablet') {
-            margin: 1.55rem 1.6rem;
-            // width: 100%;
-            // width: 10.4rem;
-            height: 3.2rem;
+            width: calc(100% - 1.59rem);
+            max-width: 10.4rem;
+            min-width: 8rem;
           }
           > img {
             height: 100%;
             width: 100%;
-            object-fit: fill;
+            object-fit: cover;
           }
         }
       }
@@ -65,9 +103,11 @@
     border-radius: 10px;
     @include media('<=tablet') {
       flex-direction: column;
+      justify-content: center;
       gap: 0;
       height: auto;
-      padding: 2.8rem 3.3rem;
+      padding: 2.8rem 0;
+      width: 100%;
     }
     > .topic {
       display: flex;
@@ -84,6 +124,7 @@
         @include media('<=tablet') {
           font-size: 2.3rem;
           line-height: 150%;
+          text-align: center;
         }
       }
       > .why-to-join {
@@ -104,6 +145,11 @@
             height: 2.4rem;
             > .check {
               fill: $yellow;
+              @include media('<=tablet') {
+                width: 1.14rem;
+                height: 0.786rem;
+                fill: $white;
+              }
             }
           }
         }
@@ -125,11 +171,11 @@
           width: 5.539rem;
           height: 5.539rem;
           border: 3px solid $yellow;
+          @include media('<=tablet') {
+            border: 3px solid $white;
+          }
           &:not(:last-child) {
             margin-left: -2.105rem;
-            // @include media('<=tablet') {
-            //   margin-left: -1.383rem;
-            // }
           }
         }
       }
@@ -138,6 +184,9 @@
         font-size: 1.4rem;
         line-height: 20px;
         height: 5.1rem;
+        @include media('<=tablet') {
+          padding: 1.55rem 5.05rem;
+        }
       }
     }
   }

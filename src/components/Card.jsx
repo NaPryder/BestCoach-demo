@@ -13,12 +13,12 @@ const Card = ({ profile, ...props }) => {
       <div className="prodile-detail">
         <h3>{profile.name}</h3>
         <span>
-          <Education />
+          <Education width={17.4} height={14.5} className="education-icon" />
           <p>{profile.education}</p>
         </span>
 
         <span>
-          <Occupation />
+          <Occupation width={16.6} height={15.8} className="occupation-icon" />
           <p>{profile.occupation}</p>
         </span>
         <div className="tags">

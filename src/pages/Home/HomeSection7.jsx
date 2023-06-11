@@ -1,27 +1,23 @@
-import React from 'react'
-import { getCompany, menteeImages } from './data'
-import Check from '@/Icons/Check'
+import React, { useEffect } from 'react'
+import { getCompany, menteeImages, meteeReviews } from './data'
 import OverLapingImages from '@/components/OverLapingImages'
 import Button from '@/components/Button'
 import CheckItem from './CheckItem'
+import MenteeReview from './MenteeReview'
+import useWindowResize from '@/hooks/useWindowResize'
+
 const HomeSection7 = () => {
   const images = getCompany()
+  const [height, width] = useWindowResize()
 
   return (
     <section className="section-mentee-review">
       <h2>Hear from happy mentees</h2>
       <div className="mentee-container">
-        <div className="mentee">
-          <div className="mentee-image">
-            <img src="" alt="" />
-          </div>
-          <p className="reviews">
-            “I found an amazing mentor who guided me every step of the way. Their insights and support were invaluable,
-            and I successfully landed my dream job.”
-          </p>
-          <p className="name">Jerome Bell</p>
-          <p className="occupation">Product Manager</p>
-        </div>
+        {meteeReviews
+          .slice(0, 3)
+          .map(mentee => <MenteeReview key={mentee.id} mapMenteeReview={mentee} />)
+          .reduce((prev, curr, i) => [prev, <hr key={i + 100} />, curr])}
       </div>
       <div className="world-class-company">
         <p>Mentors coming from world class companies</p>
@@ -29,7 +25,7 @@ const HomeSection7 = () => {
           {images.map((img, i) => (
             <div className="company" key={i}>
               <div className="image-container">
-                <img src={img} alt="" />
+                <img src={img} alt="world-company-logo" />
               </div>
             </div>
           ))}
@@ -51,7 +47,7 @@ const HomeSection7 = () => {
         </div>
         <div className="registration">
           <OverLapingImages images={menteeImages} max={4} />
-          <Button primary={false} size="default" className="">
+          <Button primary={width < 768 ? true : false} size="default" className="">
             Join as mentor
           </Button>
         </div>

@@ -3,9 +3,11 @@
   height: 38.5rem;
   align-items: center;
   gap: 12.8rem;
-  margin-left: 24rem;
-  margin-right: 24rem;
-
+  justify-content: center;
+  // margin-left: 24rem;
+  // margin-right: 24rem;
+  // margin-left: auto;
+  // margin-right: auto;
   @include media('<=tablet') {
     flex-direction: column;
     gap: 3.2rem;

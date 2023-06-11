@@ -7,24 +7,28 @@
     margin: 1.2rem 1.6rem;
   }
 
-  .logo {
+  > .logo {
     @include logo-default-size();
   }
 
-  .menu-container {
+  > .menu-container {
     display: flex;
-    gap: 1rem;
+    gap: 4.5rem;
     align-items: center;
     visibility: visible;
 
-    .nav-link,
-    .btn {
+    > .nav-link,
+    > .btn {
       @include media('<=tablet') {
         display: none;
       }
     }
-    .nav-link {
+    > .nav-link {
       color: $dark-blue-0;
+    }
+
+    > .btn {
+      padding: 0.625rem 2rem;
     }
   }
   .menu-bar {

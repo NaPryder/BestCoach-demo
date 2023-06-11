@@ -23,6 +23,9 @@
   cursor: pointer;
   padding: 9px 17px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   //  primary
   &.primary {
@@ -55,8 +58,6 @@
 
   // size
   &.lg {
-    display: flex;
-    align-items: center;
     gap: 1.125rem;
     padding: 1.6rem 2.7rem;
     font-size: 1.6rem;

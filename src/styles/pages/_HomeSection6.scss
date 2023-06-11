@@ -56,14 +56,24 @@
 
     @include media('<=tablet') {
       margin-bottom: 3.123rem;
+      gap: 2.1rem;
     }
 
     > .card {
       flex: 0 0 auto;
+      width: 35.2rem;
+      @include media('<=tablet') {
+        width: 234.76px;
+      }
     }
   }
 
   > button {
     align-self: center;
+    > svg {
+      @include media('<=tablet') {
+        display: none;
+      }
+    }
   }
 }
