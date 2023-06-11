@@ -1,5 +1,5 @@
 import React from 'react'
-import women from '@/assets/homeSection4_desktop.png'
+import women from '@/assets/homeSection4.png'
 import Check from '@/Icons/Check'
 const HomeSection4 = () => {
   const items = [

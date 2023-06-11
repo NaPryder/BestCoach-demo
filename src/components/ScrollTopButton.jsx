@@ -27,7 +27,6 @@ const ScrollTopButton = () => {
   }
   return (
     <>
-      {' '}
       {showButton && (
         <button className="back-to-top" onClick={() => scrollTop()}>
           Top

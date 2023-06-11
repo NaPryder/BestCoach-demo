@@ -5,14 +5,31 @@ import Button from '@/components/Button'
 import Arrow from '@/Icons/Arrow'
 
 const HomeSection6 = () => {
+  function clickNext() {
+    const cardContainer = [...document.getElementsByClassName('card-container')]
+
+    cardContainer.forEach((item, i) => {
+      let cardDimension = item.getBoundingClientRect()
+      let containerWidth = cardDimension.width
+      item.scrollLeft += containerWidth
+    })
+  }
+  function clickPrev() {
+    const cardContainer = [...document.getElementsByClassName('card-container')]
+    cardContainer.forEach((item, i) => {
+      let cardDimension = item.getBoundingClientRect()
+      let containerWidth = cardDimension.width
+      item.scrollLeft -= containerWidth
+    })
+  }
   return (
     <section className="section-discover-mentor">
       <div className="header">
         <h2>Discover mentors</h2>
-        <div className="arrow">
+        <div className="arrow" onClick={() => clickPrev()}>
           <Arrow direction="left" width={17} height={17} />
         </div>
-        <div className="arrow">
+        <div className="arrow" onClick={() => clickNext()}>
           <Arrow direction="right" width={17} height={17} />
         </div>
       </div>

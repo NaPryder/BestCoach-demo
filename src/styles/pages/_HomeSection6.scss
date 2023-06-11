@@ -49,6 +49,7 @@
     width: 100%;
     gap: 4rem;
     margin-bottom: 5.1rem;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
       display: none;

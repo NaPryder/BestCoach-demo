@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import React, { lazy, Suspense, useRef } from 'react'
 
 const HomeSection1 = lazy(() => import('./HomeSection1'))
 const HomeSection2 = lazy(() => import('./HomeSection2'))
@@ -7,7 +7,7 @@ const HomeSection4 = lazy(() => import('./HomeSection4'))
 const HomeSection5 = lazy(() => import('./HomeSection5'))
 const HomeSection6 = lazy(() => import('./HomeSection6'))
 const HomeSection7 = lazy(() => import('./HomeSection7'))
-const Home = () => {
+const Home = (mentorRef, props) => {
   const loading = <h2>Loading</h2>
   return (
     <>
@@ -27,7 +27,7 @@ const Home = () => {
         <HomeSection5 />
       </Suspense>
       <Suspense fallback={loading}>
-        <HomeSection6 />
+        <HomeSection6 mentorRef={mentorRef} />
       </Suspense>
       <Suspense fallback={loading}>
         <HomeSection7 />

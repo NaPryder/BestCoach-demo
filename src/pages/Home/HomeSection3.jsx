@@ -1,6 +1,5 @@
 import React from 'react'
-// import men from '@/assets/homeSection3_desktop.png'
-import men from '@/assets/homeSection3_mobile.png'
+import men from '@/assets/homeSection3.png'
 import TipDetail from './TipDetail'
 
 const HomeSection3 = () => {
