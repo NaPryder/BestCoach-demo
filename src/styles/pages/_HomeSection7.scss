@@ -146,8 +146,8 @@
             > .check {
               fill: $yellow;
               @include media('<=tablet') {
-                width: 1.14rem;
-                height: 0.786rem;
+                width: 1.2rem;
+                height: 0.8rem;
                 fill: $white;
               }
             }

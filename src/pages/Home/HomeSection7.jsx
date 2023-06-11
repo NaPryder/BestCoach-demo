@@ -35,13 +35,13 @@ const HomeSection7 = () => {
         <div className="topic">
           <h2>Want to be a mentor?</h2>
           <div className="why-to-join">
-            <CheckItem topic="Join for free" iconBoxClassname="box" iconClassname="check" width="11px" height="7px" />
+            <CheckItem topic="Join for free" iconBoxClassname="box" iconClassname="check" width={14} height={10} />
             <CheckItem
               topic="Earn mentorship bonus"
               iconBoxClassname="box"
               iconClassname="check"
-              width="11px"
-              height="7px"
+              width={14}
+              height={10}
             />
           </div>
         </div>

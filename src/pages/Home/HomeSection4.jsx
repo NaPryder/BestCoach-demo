@@ -35,7 +35,7 @@ const HomeSection4 = () => {
           )
         })}
         <p className="refund-link">
-          <Check width="17px" height="12px" className="check" />
+          <Check width={17} height={12} className="check" />
           30 days refund available
         </p>
       </div>

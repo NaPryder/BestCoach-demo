@@ -15,28 +15,28 @@ const HomeSection5 = () => {
       </div>
       <div className="learning-item-container">
         <div>
-          <CheckItem topic="Referral & Job Offer" />
+          <CheckItem topic="Referral & Job Offer" width={14} height={10} />
         </div>
         <div>
-          <CheckItem topic="Industry Insights" />
+          <CheckItem topic="Industry Insights" width={14} height={10} />
         </div>
         <div>
-          <CheckItem topic="Career Counselling" />
+          <CheckItem topic="Career Counselling" width={14} height={10} />
         </div>
         <div>
-          <CheckItem topic="Life Counselling" />
+          <CheckItem topic="Life Counselling" width={14} height={10} />
         </div>
         <div>
-          <CheckItem topic="Professional Branding" />
+          <CheckItem topic="Professional Branding" width={14} height={10} />
         </div>
         <div>
-          <CheckItem topic="Relationship Counselling" />
+          <CheckItem topic="Relationship Counselling" width={14} height={10} />
         </div>
         <div>
-          <CheckItem topic="Career Planning" />
+          <CheckItem topic="Career Planning" width={14} height={10} />
         </div>
         <div>
-          <CheckItem topic="Mock Interview" />
+          <CheckItem topic="Mock Interview" width={14} height={10} />
         </div>
       </div>
       <Button primary size={width > 768 ? 'lg' : 'default'}>
