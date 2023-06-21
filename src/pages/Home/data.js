@@ -4,8 +4,8 @@ export const mentors = [
     image:
       'https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80',
     name: 'Surendra W.',
-    education: 'Director of Marketing (BCG)',
-    occupation: 'Leadership Management (INSEAD)',
+    education: 'INSEAD MBA',
+    occupation: 'Marketing Strategy and Operations Manager at Google Cloud',
     tags: [
       {
         title: 'Verified',
@@ -21,31 +21,31 @@ export const mentors = [
       },
     ],
     experience: '2 years',
-    industry: 'Fintech',
+    industry: 'Internet',
     session: 3,
   },
   {
     id: 6792,
     image:
       'https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
-    name: 'Surendra S.',
-    education: 'Director of Marketing (BCG)',
-    occupation: 'Leadership Management (INSEAD)',
+    name: 'Alex T.',
+    education: 'The University of Auckland, BSc and BMus, Computer Science and Composition',
+    occupation: 'Director of Software Engineering at PayPal',
     tags: [
       {
         title: 'Verified',
         color: 'green',
       },
-      {
-        title: 'Pro',
-        color: 'blue',
-      },
+      // {
+      //   title: 'Pro',
+      //   color: 'blue',
+      // },
       {
         title: 'Referral',
         color: 'blue',
       },
     ],
-    experience: '4 years',
+    experience: '9 years',
     industry: 'Fintech',
     session: 3,
   },
@@ -53,9 +53,9 @@ export const mentors = [
     id: 67893,
     image:
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    name: 'Surendra S.',
-    education: 'Director of Marketing (BCG)',
-    occupation: 'Leadership Management (INSEAD)',
+    name: 'Denis S.',
+    education: 'Master, Project Management, Heriot-Watt University',
+    occupation: 'Head, Digital Retail at Petronas',
     tags: [
       {
         title: 'Verified',
@@ -65,38 +65,38 @@ export const mentors = [
         title: 'Pro',
         color: 'blue',
       },
-      {
-        title: 'Referral',
-        color: 'blue',
-      },
+      // {
+      //   title: 'Referral',
+      //   color: 'blue',
+      // },
     ],
-    experience: '8 years',
-    industry: 'Fintech',
+    experience: '20 years',
+    industry: 'Internet',
     session: 3,
   },
   {
     id: 5345664,
     image:
       'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80',
-    name: 'Surendra K.',
-    education: 'Director of Marketing (BCG)',
-    occupation: 'Leadership Management (INSEAD)',
+    name: 'Kelvin T.',
+    education: 'INSEAD MBA',
+    occupation: 'Sales Manager, Asia Pacific at Microsoft',
     tags: [
       {
         title: 'Verified',
         color: 'green',
       },
-      {
-        title: 'Pro',
-        color: 'blue',
-      },
+      // {
+      //   title: 'Pro',
+      //   color: 'blue',
+      // },
       {
         title: 'Referral',
         color: 'blue',
       },
     ],
     experience: '6 years',
-    industry: 'Fintech',
+    industry: 'Internet',
     session: 3,
   },
   {
@@ -104,8 +104,8 @@ export const mentors = [
     image:
       'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     name: 'Surendra S.',
-    education: 'Director of Marketing (BCG)',
-    occupation: 'Leadership Management (INSEAD)',
+    education: 'National University of Singapore, PhD',
+    occupation: 'Research Fellow at National University of Singapore',
     tags: [
       {
         title: 'Verified',
@@ -120,17 +120,17 @@ export const mentors = [
         color: 'blue',
       },
     ],
-    experience: '6 years',
-    industry: 'Fintech',
+    experience: '12 years',
+    industry: 'Computer',
     session: 3,
   },
   {
     id: 1236,
     image:
       'https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
-    name: 'Surendra S.',
-    education: 'Director of Marketing (BCG)',
-    occupation: 'Leadership Management (INSEAD)',
+    name: 'Michael S.',
+    education: 'INSEAD MBA',
+    occupation: 'Consultant at Boston Consulting Group (BCG)',
     tags: [
       {
         title: 'Verified',
@@ -146,7 +146,7 @@ export const mentors = [
       },
     ],
     experience: '6 years',
-    industry: 'Fintech',
+    industry: 'Consulting',
     session: 3,
   },
 ]
