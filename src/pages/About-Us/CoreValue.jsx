@@ -3,7 +3,7 @@ import UspWraper from '@components/UspWraper'
 import Computer from '@icons/Computer'
 import Scales from '@icons/Scales'
 import Trophy from '@icons/Trophy'
-import People from '@/Icons/People'
+import People from '@icons/People'
 
 const CoreValue = props => {
   const contents = [
