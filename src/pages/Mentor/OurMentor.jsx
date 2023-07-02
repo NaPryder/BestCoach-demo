@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { virtualMentors } from '../Mentee/data'
 import Card from '@components/Card'
 import Button from '@components/Button'
-import Arrow from '@/icons/Arrow'
+import Arrow from '@icons/Arrow'
 import { APP_SCREEN_WIDTH } from '@hooks/constant'
 import useWindowResize from '@hooks/useWindowResize'
 

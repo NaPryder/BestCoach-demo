@@ -20,7 +20,7 @@ export default defineConfig({
       { find: '@components', replacement: path.resolve(__dirname, './src/components') },
       { find: '@pages', replacement: path.resolve(__dirname, './src/pages') },
       { find: '@hooks', replacement: path.resolve(__dirname, './src/hooks') },
-      { find: '@icons', replacement: path.resolve(__dirname, './src/icons') },
+      { find: '@icons', replacement: path.resolve(__dirname, './src/Icons') },
       { find: '@images', replacement: path.resolve(__dirname, './src/images') },
     ],
   },

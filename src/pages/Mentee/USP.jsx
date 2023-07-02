@@ -1,6 +1,6 @@
-import Flag from '@/icons/Flag'
-import People from '@/icons/People'
-import Video from '@/icons/Video'
+import Flag from '@icons/Flag'
+import People from '@icons/People'
+import Video from '@icons/Video'
 import UspWraper from '@components/UspWraper'
 import React from 'react'
 

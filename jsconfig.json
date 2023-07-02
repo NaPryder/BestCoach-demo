@@ -18,7 +18,7 @@
         "./src/hooks/*"
       ],
       "@icons/*": [
-        "./src/icons/*"
+        "./src/Icons/*"
       ],
       "@images/*": [
         "./src/images/*"

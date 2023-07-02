@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import CheckItem from '@components/CheckItem'
 import Button from '@components/Button'
-import Arrow from '@/icons/Arrow'
+import Arrow from '@icons/Arrow'
 import useWindowResize from '@hooks/useWindowResize'
 import { APP_SCREEN_WIDTH } from '@hooks/constant'
 
