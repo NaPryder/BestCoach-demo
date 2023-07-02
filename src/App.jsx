@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       }
     >
       <Route index element={<HomeMentee />} />
-      <Route path="/mentor" element={<HomeMentor />} />
+      <Route path="/become-mentor" element={<HomeMentor />} />
       <Route path="/about-us" element={<AboutUs />} />
     </Route>
   )

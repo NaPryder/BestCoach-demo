@@ -28,7 +28,7 @@ export default function Navbar() {
         >
           Find Mentor
         </ScrollLink>
-        <NavLink className="nav-link" to="/mentor" reloadDocument>
+        <NavLink className="nav-link" to="/become-mentor" reloadDocument>
           Become a mentor
         </NavLink>
         <NavLink className="nav-link" to="/browse-programs">
