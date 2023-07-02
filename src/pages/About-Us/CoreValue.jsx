@@ -1,9 +1,9 @@
 import React from 'react'
 import UspWraper from '@components/UspWraper'
-import People from '@icons/People'
 import Computer from '@icons/Computer'
 import Scales from '@icons/Scales'
 import Trophy from '@icons/Trophy'
+import People from '@/Icons/People'
 
 const CoreValue = props => {
   const contents = [

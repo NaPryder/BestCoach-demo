@@ -1,16 +1,11 @@
-import IconWraper from "./IconWraper";
-import { MapIconStylingTemplate } from "./iconOptions";
-import React from "react"
+import IconWraper from './IconWraper'
+import { MapIconStylingTemplate } from './iconOptions'
+import React from 'react'
 
-function People({ className, ...props }) {
+function Computer({ className, ...props }) {
   return (
     <IconWraper option={MapIconStylingTemplate.computer} {...props}>
-      <svg
-        className={className}
-        viewBox="0 0 32 32"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ fill: "none" }}
-      >
+      <svg className={className} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style={{ fill: 'none' }}>
         <path
           d="M14 4.00049H6C4.89543 4.00049 4 4.89592 4 6.00049V20.6672C4 21.7718 4.89543 22.6672 6 22.6672H26C27.1046 22.6672 28 21.7718 28 20.6672V14.0005"
           stroke="currentColor"
@@ -48,7 +43,7 @@ function People({ className, ...props }) {
         />
       </svg>
     </IconWraper>
-  );
+  )
 }
 
-export default People;
+export default Computer
