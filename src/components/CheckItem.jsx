@@ -1,5 +1,5 @@
 import React from 'react'
-import Check from '@icons/Check'
+import Check from '@/icons/Check'
 
 const CheckItem = ({
   topic,

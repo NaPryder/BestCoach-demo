@@ -7,8 +7,8 @@ import Button from '@components/Button'
 import imageTeam3 from '@images/teams/dev_nc.png'
 import imageAvatar from '@images/teams/avatar.png'
 
-import IconWraper from '@icons/IconWraper'
-import { MapIconStylingTemplate } from '@icons/iconOptions'
+import IconWraper from '@/icons/IconWraper'
+import { MapIconStylingTemplate } from '@/icons/iconOptions'
 import LinkedIn from '@/Icons/LinkedIn'
 
 const OurTeam = () => {

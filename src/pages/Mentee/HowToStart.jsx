@@ -1,6 +1,6 @@
 import React from 'react'
 import women from '@images/home-hero/hero-women.png'
-import Check from '@icons/Check'
+import Check from '@/icons/Check'
 import useWindowResize from '@hooks/useWindowResize'
 import { APP_SCREEN_WIDTH } from '@hooks/constant'
 

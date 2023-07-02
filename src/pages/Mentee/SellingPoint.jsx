@@ -1,7 +1,7 @@
 import React from 'react'
 import CountingReview from './CountingReview'
 import Button from '@components/Button'
-import Arrow from '@icons/Arrow'
+import Arrow from '@/icons/Arrow'
 import bg from '@images/home-hero/homeSection1.png'
 import { menteeImages } from './data'
 import { APP_SCREEN_WIDTH } from '@hooks/constant'
