@@ -1,0 +1,89 @@
+#section-our-mentors {
+  @include set-default-section($white);
+
+  > .section-content-container {
+    max-width: 1346px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 44px;
+
+    @include media('<=LGtablet') {
+      margin: 40px 0 39px 16px;
+    }
+
+    @include media('<=tablet') {
+      margin: 40px 0 39px 16px;
+    }
+
+    > .header {
+      display: flex;
+      margin-bottom: 28px;
+
+      @include media('<=LGtablet') {
+        margin-right: 16px;
+      }
+
+      @include media('<=tablet') {
+        margin-bottom: 25px;
+      }
+
+      > h2 {
+        margin-right: auto;
+
+        @include media('<=tablet') {
+          font-size: 21px;
+        }
+      }
+
+      > .arrow {
+        background: $white;
+        border: 1px solid $light-gray-blue-3;
+        border-radius: 14px;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        @include media('<=tablet') {
+          width: 40px;
+          height: 40px;
+        }
+
+        &:nth-of-type(1) {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    > .card-container {
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+      gap: 35px;
+      margin-bottom: 47px;
+      scroll-behavior: smooth;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @include media('<=tablet') {
+        margin-bottom: 31.23px;
+        gap: 21px;
+      }
+    }
+
+    > button {
+      align-self: center;
+
+      > svg {
+        @include media('<=tablet') {
+          display: none;
+        }
+      }
+    }
+  }
+}

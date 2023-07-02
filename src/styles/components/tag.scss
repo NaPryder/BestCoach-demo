@@ -1,0 +1,35 @@
+div[class^='tag-'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 11px;
+  border-radius: 11px;
+  height: 21px;
+
+  @include media('<=tablet') {
+    height: 16px;
+
+    border-radius: 9px;
+    padding: 1.5px 9px;
+  }
+
+  > p {
+    font-size: 14px;
+    font-weight: 500;
+
+    @include media('<=tablet') {
+      font-size: 11px;
+      line-height: 20px;
+    }
+  }
+
+  &.tag-green {
+    background-color: $light-green;
+    color: $dark-green;
+  }
+
+  &.tag-blue {
+    background-color: $ligth-blue;
+    color: $blue;
+  }
+}

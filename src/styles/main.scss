@@ -13,23 +13,54 @@
 @import './layouts/Navbar.scss';
 @import './layouts/Footer.scss';
 
+// icons
+@import './icons/icons.scss';
+
 // components
-@import './components/Button.scss';
-@import './components/OverlapingImages';
-@import './components/Arrow';
-@import './components/Card';
-@import './components/Tag';
-@import './components/ProfileCircleImage';
+@import './components/button.scss';
+@import './components/overlaping-images.scss';
+@import './components/card.scss';
+@import './components/tag.scss';
+@import './components/profile-circle-image.scss';
+@import './components/counting-review.scss';
+@import './components/check-item.scss';
+@import './components/usp-wraper.scss';
+@import './components/star-rating.scss';
+@import './components/common-review-container.scss';
+@import './components/review-dialog.scss';
+@import './components/highlight-action.scss';
+@import './components/question-answer-box.scss';
+
+// layout
+@import './layouts/layout.scss';
 
 // pages
-@import './pages/HomeSection1';
-@import './pages/CountingtReview';
-@import './pages/HomeSection2';
-@import './pages/HomeSection3';
-@import './pages/TipDetail';
-@import './pages/HomeSection4';
-@import './pages/HomeSection5';
-@import './pages/CheckItem';
-@import './pages/HomeSection6';
-@import './pages/HomeSection7';
-@import './pages/MenteeReview';
+// home-mentee
+@import './pages/home-mentee/selling-point.scss';
+@import './pages/home-mentee/usp.scss';
+@import './pages/home-mentee/expert-tips.scss';
+@import './pages/home-mentee/TipDetail';
+@import './pages/home-mentee/how-to-get-start.scss';
+@import './pages/home-mentee/program-category.scss';
+@import './pages/home-mentee/discovery-metor.scss';
+@import './pages/home-mentee/hear-from-our-mentee.scss';
+@import './pages/home-mentee/world-class-company.scss';
+@import './pages/home-mentee/want-to-be-mentor.scss';
+
+// home-mentor
+// @import './pages/home-mentor/home-mentor.scss';
+@import './pages/home-mentor/hero-section.scss';
+@import './pages/home-mentor/hear-from-our-mentor.scss';
+@import './pages/home-mentor/how-to-get-start.scss';
+@import './pages/home-mentor/step.scss';
+@import './pages/home-mentor/thing-you-can-offer.scss';
+@import './pages/home-mentor/our-mentor.scss';
+@import './pages/home-mentor/why-join-us.scss';
+@import './pages/home-mentor/faq-section.scss';
+
+// about-us
+@import './pages/about-us/our-background.scss';
+@import './pages/about-us/our-impact.scss';
+@import './pages/about-us/our-mission.scss';
+@import './pages/about-us/core-value.scss';
+@import './pages/about-us/team.scss';

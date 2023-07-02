@@ -1,3 +1,5 @@
+import React from 'react'
+
 function Star({ width, height, className, ...props }) {
   return (
     <svg className={className} width={width} height={height} viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">

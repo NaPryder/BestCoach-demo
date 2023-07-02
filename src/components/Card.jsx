@@ -1,28 +1,42 @@
 import React from 'react'
 import Tag from './Tag'
-import Education from '@/Icons/Education'
-import Occupation from '@/Icons/Occupation'
+import Education from '@icons/Education'
+import Occupation from '@icons/Occupation'
 import PropTypes from 'prop-types'
+import { APP_SCREEN_WIDTH } from '@hooks/constant'
+import useWindowResize from '@hooks/useWindowResize'
 
 const Card = ({ profile, ...props }) => {
+  const width = useWindowResize()
+
   return (
     <div className="card">
       <div className="profile-image">
-        <img src={profile.image} alt="profile-image" />
+        <img src={profile.image} alt="profile" />
       </div>
       <div className="prodile-detail">
         <h3>{profile.name}</h3>
-        <span>
-          <Education width={17.4} height={14.5} className="education-icon" />
+        <div className="detail education">
+          <Education
+            size={width <= APP_SCREEN_WIDTH.tablet ? 'sm' : 'm'}
+            color="gray"
+            shade="secondary"
+            className="education-icon"
+          />
           <p>{profile.education}</p>
-        </span>
+        </div>
 
-        <span>
-          <Occupation width={16.6} height={15.8} className="occupation-icon" />
+        <div className="detail occupation">
+          <Occupation
+            size={width <= APP_SCREEN_WIDTH.tablet ? 'sm' : 'm'}
+            color="gray"
+            shade="secondary"
+            className="occupation-icon"
+          />
           <p>{profile.occupation}</p>
-        </span>
+        </div>
         <div className="tags">
-          {profile?.tags &&
+          {profile.tags &&
             profile.tags.map((tag, i) => {
               return <Tag key={i} title={tag.title} color={tag.color} />
             })}

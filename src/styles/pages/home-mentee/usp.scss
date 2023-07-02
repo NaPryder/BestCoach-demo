@@ -1,0 +1,26 @@
+#section-unique-selling-point {
+  @include set-default-section($white);
+
+  > .usp-container {
+    @include set-default-section-container();
+
+    height: 385px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+
+    @include media('<=LGtablet') {
+      gap: 0;
+      justify-content: space-evenly;
+      margin: 0 16px;
+    }
+
+    @include media('<=tablet') {
+      flex-direction: column;
+      gap: 32px;
+      height: auto;
+      margin: 32px 16px;
+    }
+  }
+}

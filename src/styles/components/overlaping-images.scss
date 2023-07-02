@@ -1,0 +1,8 @@
+.overlap-images {
+  display: inline-flex;
+  flex-direction: row-reverse;
+
+  .image-container {
+    position: relative;
+  }
+}

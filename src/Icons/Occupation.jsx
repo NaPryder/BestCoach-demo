@@ -1,25 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import IconWraper from './IconWraper'
+import { MapIconStylingTemplate } from './iconOptions'
 
-const Occupation = ({ className, width, height, ...props }) => {
+const Occupation = ({ className, ...props }) => {
   return (
-    <svg
-      className={className}
-      width={width ? `${width + 2}px` : '18px'}
-      height={height ? `${height + 2}px` : '17px'}
-      viewBox="0 0 18 17"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M7.33342 0.666626H10.6667C11.1088 0.666626 11.5327 0.842221 11.8453 1.15478C12.1578 1.46734 12.3334 1.89127 12.3334 2.33329V3.99996H15.6667C16.1088 3.99996 16.5327 4.17555 16.8453 4.48811C17.1578 4.80067 17.3334 5.2246 17.3334 5.66663V14.8333C17.3334 15.2753 17.1578 15.6992 16.8453 16.0118C16.5327 16.3244 16.1088 16.5 15.6667 16.5H2.33341C1.89139 16.5 1.46746 16.3244 1.1549 16.0118C0.842343 15.6992 0.666748 15.2753 0.666748 14.8333V5.66663C0.666748 4.74163 1.40841 3.99996 2.33341 3.99996H5.66675V2.33329C5.66675 1.40829 6.40841 0.666626 7.33342 0.666626ZM10.6667 3.99996V2.33329H7.33342V3.99996H10.6667Z"
-        fill="#9CA3AF"
-      />
-    </svg>
+    <IconWraper option={MapIconStylingTemplate.occupation} {...props}>
+      <svg className={className} viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.50708 1.56165H9.03357C9.3686 1.56165 9.68991 1.69474 9.92682 1.93164C10.1637 2.16855 10.2968 2.48986 10.2968 2.82489V4.08814H12.8233C13.1583 4.08814 13.4796 4.22123 13.7166 4.45813C13.9535 4.69504 14.0865 5.01635 14.0865 5.35138V12.2992C14.0865 12.6343 13.9535 12.9556 13.7166 13.1925C13.4796 13.4294 13.1583 13.5625 12.8233 13.5625H2.71735C2.38231 13.5625 2.061 13.4294 1.8241 13.1925C1.58719 12.9556 1.4541 12.6343 1.4541 12.2992V5.35138C1.4541 4.65028 2.01625 4.08814 2.71735 4.08814H5.24384V2.82489C5.24384 2.12379 5.80598 1.56165 6.50708 1.56165ZM9.03357 4.08814V2.82489H6.50708V4.08814H9.03357Z" />
+      </svg>
+    </IconWraper>
   )
 }
 
-Occupation.propTypes = {
-  width: PropTypes.number,
-  height: PropTypes.number,
-}
 export default Occupation

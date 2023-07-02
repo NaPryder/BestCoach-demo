@@ -1,0 +1,44 @@
+.checking-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 5px;
+
+  &.white {
+    background-color: $white;
+    border: 1px solid $very-light-gray-1;
+  }
+
+  &.yellow {
+    background-color: $yellow-primary;
+    border: 1px solid $yellow-primary;
+  }
+
+  > .circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.pink {
+      background-color: $light-pink;
+    }
+
+    &.maroon {
+      background-color: $maroon-primary;
+    }
+
+    &.white {
+      background-color: $white;
+    }
+  }
+
+  > p {
+    text-align: center;
+
+    &.white {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.review-dialog-frame {
+  display: grid;
+  grid-template-rows: 90px minmax(138px, 1fr) 55px;
+
+  @include media('<=tablet') {
+    align-items: center;
+  }
+
+  > .profile {
+    @include media('<=tablet') {
+      margin: 0 auto 15px;
+    }
+  }
+  p {
+    @include media('<=tablet') {
+      text-align: center;
+    }
+  }
+
+  > .review {
+    font-size: 18px;
+    line-height: 28px;
+    color: $main-black;
+    // padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include media('<=tablet') {
+      font-size: 16px;
+      line-height: 150%;
+      color: $gray-secondary;
+    }
+  }
+
+  > div {
+    > .name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+
+    > .occupation {
+      line-height: 26px;
+    }
+  }
+}

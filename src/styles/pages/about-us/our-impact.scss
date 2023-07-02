@@ -1,0 +1,52 @@
+.subsection-our-impact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  @include media('<=tablet') {
+    @include set-tablet-margin();
+    gap: 18px;
+  }
+
+  > .our-impact {
+    margin-top: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
+    align-items: center;
+
+    @include media('<=tablet') {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    > .impact-number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > :first-child {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: -1px;
+        color: $main-black;
+      }
+    }
+
+    > hr {
+      background-color: $main-black;
+      opacity: 0.08;
+      height: 39px;
+      width: 1px;
+
+      @include media('<=tablet') {
+        height: 1px;
+        width: 86px;
+      }
+    }
+  }
+}

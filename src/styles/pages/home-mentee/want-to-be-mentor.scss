@@ -1,0 +1,56 @@
+#section-want-to-be-mentor {
+  @include set-default-section($yellow-secondary);
+  > .section-content-container {
+    @include set-desktop-margin($top: 32px);
+    @include set-default-section-container($max-width: $content-max-width);
+    display: flex;
+
+    @include media('<=tablet') {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .home-mentee-keyword-items {
+      display: flex;
+      gap: 32px;
+      @include media('<=1070px') {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      > :nth-child(n) {
+        padding: 0;
+      }
+    }
+
+    .home-mentee-action-items {
+      display: flex;
+      gap: 17.63px;
+      margin-right: 46.5px;
+      align-items: center;
+
+      @include media('<=900px') {
+        gap: 12px;
+        margin-right: 20px;
+      }
+
+      @include media('<=tablet') {
+        flex-direction: column;
+        max-width: 214px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 16px;
+      }
+
+      > button {
+        width: 214px;
+        height: 55px;
+
+        > div {
+          margin: 16px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.counting-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.6;
+  }
+
+  > .title {
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-family: $font-inter;
+  }
+}

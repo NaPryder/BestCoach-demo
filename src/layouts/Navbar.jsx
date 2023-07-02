@@ -18,10 +18,6 @@ export default function Navbar() {
       </Link>
 
       <div className="menu-container">
-        {/* <NavLink className="nav-link" end to="/client" onClick={() => scrollToComponent('how-it-works')}>
-          Find Mentor
-        </NavLink> */}
-        {/* section-discover-mentor */}
         <ScrollLink
           className="nav-link"
           to="section-discover-mentor"
@@ -32,7 +28,7 @@ export default function Navbar() {
         >
           Find Mentor
         </ScrollLink>
-        <NavLink className="nav-link" to="/" reloadDocument>
+        <NavLink className="nav-link" to="/mentor" reloadDocument>
           Become a mentor
         </NavLink>
         <NavLink className="nav-link" to="/browse-programs">
@@ -41,10 +37,9 @@ export default function Navbar() {
         <NavLink className="nav-link" to="how-it-works">
           How it works
         </NavLink>
-        <NavLink className="nav-link" to="/faq">
-          FAQ
+        <NavLink className="nav-link" to="/about-us">
+          About Us
         </NavLink>
-        {/* <NavLink to="/news">News & Community</NavLink> */}
         <Button primary={false} onClick={() => navigate('/signin', { replace: true })}>
           Sign in
         </Button>

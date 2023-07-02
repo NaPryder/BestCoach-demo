@@ -1,0 +1,132 @@
+#section-program-category {
+  @include set-default-section($yellow-secondary);
+
+  > .section-content-container {
+    @include set-default-section-container();
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    @include set-desktop-margin();
+
+    @include media('<=tablet') {
+      @include set-tablet-margin();
+    }
+
+    > .section-heading {
+      text-align: center;
+
+      @include media('<=tablet') {
+        margin: 0 16px;
+      }
+
+      > h2 {
+        margin-bottom: 32px;
+
+        @include media('<=tablet') {
+          line-height: 150%;
+          font-size: 23px;
+        }
+      }
+
+      > p {
+        opacity: 0.7;
+      }
+    }
+
+    > .learning-item-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1050px;
+      gap: 32px;
+      margin: 0 16px 11px;
+
+      @include media('<=LGtablet') {
+        justify-content: center;
+        // gap: ;
+      }
+      @include media('<=tablet') {
+        gap: 14px;
+        margin: 0 16px;
+      }
+
+      @include media('<=650px') {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        gap: 14px;
+        margin: 0 16px;
+      }
+
+      > div {
+        &:not(:nth-child(4), :nth-child(5)) {
+          flex: 0 0 calc(33.33% - 32px);
+
+          @include media('<=LGtablet') {
+            flex: 1 0 calc(30%);
+          }
+          @include media('<=tablet') {
+            flex: 0 1 45%;
+          }
+        }
+
+        > .checking-item {
+          max-width: 328px;
+        }
+      }
+
+      // Middle row (select 4th and 5th child)
+      > div:nth-child(4) {
+        flex: 0 1 calc(50% - 20px);
+        @include media('<=tablet') {
+          flex: 0 1 45%;
+        }
+
+        > .checking-item {
+          margin-right: 4px;
+          margin-left: auto;
+          @include media('<=tablet') {
+            margin-right: 0;
+            margin-left: 0;
+          }
+          @include media('<=mobile') {
+            margin-right: auto;
+          }
+        }
+      }
+
+      > div:nth-child(5) {
+        flex: 0 1 calc(50% - 20px);
+        @include media('<=tablet') {
+          flex: 0 1 45%;
+        }
+
+        > .checking-item {
+          margin-left: 4px;
+          margin-right: auto;
+          @include media('<=tablet') {
+            margin-right: 0;
+            margin-left: 0;
+          }
+          @include media('<=mobile') {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    > button {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+
+      > svg {
+        @include media('<=tablet') {
+          display: none;
+        }
+      }
+    }
+  }
+}

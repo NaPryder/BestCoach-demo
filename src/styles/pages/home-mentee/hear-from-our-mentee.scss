@@ -1,0 +1,22 @@
+#section-hear-from-our-mentee {
+  @include set-default-section($yellow-secondary);
+  > .section-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    @include set-desktop-margin($bottom: 32px);
+    @include media('<=1332px') {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    @include media('<=tablet') {
+      @include set-tablet-margin();
+    }
+    > .review-title {
+      color: $main-black;
+      text-align: center;
+    }
+  }
+}

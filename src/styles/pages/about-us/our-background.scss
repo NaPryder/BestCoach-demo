@@ -1,0 +1,135 @@
+#section-about-us-mission {
+  @include set-default-section($white);
+
+  > .section-content-container {
+    @include set-desktop-margin($bottom: 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    @include media('<=1400px') {
+      margin: 54px 32px;
+    }
+
+    @include media('<=tablet') {
+      @include set-tablet-margin();
+      gap: 56px;
+    }
+
+    > .about-us-title {
+      // background-color: rgb(218, 32, 162);
+      max-width: 650px;
+
+      > h1 {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      > h3 {
+        margin-top: 64px;
+        text-align: center;
+        color: $gray-primary;
+
+        @include media('<=tablet') {
+          display: none;
+          margin-top: 0;
+        }
+      }
+
+      p {
+        @include media('<=tablet') {
+          text-align: center;
+        }
+      }
+
+      > .our-impact {
+        margin-top: 0;
+
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 32px;
+        align-items: center;
+
+        @include media('<=tablet') {
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+        }
+
+        > .impact-number {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          > :first-child {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 42px;
+            letter-spacing: -1px;
+            color: $main-black;
+          }
+        }
+
+        > hr {
+          background-color: $main-black;
+          opacity: 0.08;
+          height: 39px;
+          width: 1px;
+
+          @include media('<=tablet') {
+            height: 1px;
+            width: 86px;
+          }
+        }
+      }
+    }
+
+    > .hero-image-container {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+
+      @include media('<=LGtablet') {
+        gap: 18px;
+      }
+
+      > .hero-side {
+        border-radius: 6px;
+        overflow: hidden;
+        @include media('<=tablet') {
+          display: none;
+        }
+
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      > .hero-centers {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 18px;
+
+        > div {
+          border: none;
+          border-radius: 6px;
+          overflow: hidden;
+
+          @include media('<=500px') {
+            min-width: 371px;
+            gap: 14px;
+          }
+
+          > img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

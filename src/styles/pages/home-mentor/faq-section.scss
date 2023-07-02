@@ -1,0 +1,35 @@
+#section-frequently-asked-questions {
+  @include set-default-section($white);
+
+  > .section-content-container {
+    @include set-desktop-margin();
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    align-items: center;
+
+    > h2 {
+      text-align: center;
+      @include media('<=tablet') {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    }
+
+    @include media('<=tablet') {
+      @include set-tablet-margin($left: 0, $right: 0);
+    }
+
+    > .faq-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 752px;
+    }
+    > .faq-button {
+      @include media('>tablet') {
+        width: 206px;
+      }
+    }
+  }
+}

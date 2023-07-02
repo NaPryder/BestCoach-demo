@@ -1,0 +1,57 @@
+.icon-color {
+  // primary shade
+  &.yellow-primary {
+    fill: $yellow-primary;
+    color: $yellow-primary;
+  }
+
+  &.gray-primary {
+    fill: $gray-primary;
+    color: $gray-primary;
+  }
+
+  &.lynch-primary {
+    fill: $lynch-empty;
+    color: $lynch-empty;
+  }
+
+  &.maroon-primary {
+    fill: $maroon-primary;
+    color: $maroon-primary;
+  }
+
+  &.white-primary {
+    fill: $white;
+    color: $white;
+  }
+
+  // secondary shade
+  &.yellow-secondary {
+    fill: $yellow-secondary;
+    color: $yellow-secondary;
+  }
+
+  &.gray-secondary {
+    fill: $gray-secondary;
+    color: $gray-secondary;
+  }
+
+  &.lynch-secondary {
+    fill: $lynch-empty;
+    color: $lynch-empty;
+  }
+
+  &.maroon-secondary {
+    fill: $maroon-secondary;
+    color: $maroon-secondary;
+  }
+
+  &.maroon-secondary {
+    fill: $maroon-secondary;
+    color: $maroon-secondary;
+  }
+}
+
+// .yellow-primary {
+//   fill: $yellow-primary;
+// }

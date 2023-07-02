@@ -1,0 +1,104 @@
+#section-home-mentor {
+  @include set-default-section($yellow-secondary);
+  background-position: center;
+  background-repeat: repeat;
+  > .section-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0 auto;
+    @include media('<1600px') {
+      margin: 0 32px;
+      gap: 0;
+    }
+    @include media('<=LGtablet') {
+    }
+    @include media('<=950px') {
+      flex-direction: column;
+      margin: 32px 16px 0;
+      justify-content: flex-start;
+    }
+    @include media('<=tablet') {
+      height: auto;
+    }
+
+    > .join-our-network {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      min-width: 594px;
+      @include media('<=950px') {
+        min-width: auto;
+      }
+      @include media('<=tablet') {
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+      > .content-title {
+        > h1 {
+          margin-bottom: 24px;
+          @include media('<=tablet') {
+            font-size: 32px;
+          }
+        }
+      }
+      > .mentor-joined {
+        display: flex;
+        gap: 15px;
+        padding-left: 18px;
+        > div {
+          > .count {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 42px;
+            letter-spacing: -1px;
+            color: $main-black;
+            @include media('<=tablet') {
+              font-size: 21px;
+              line-height: 29.941px;
+              letter-spacing: -0.713px;
+            }
+          }
+          > p {
+            &:last-child {
+              opacity: 0.6;
+              @include media('<=tablet') {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .mentor-heroes-container {
+      width: 694px;
+      height: 613px;
+      max-height: 613px;
+      margin-bottom: -16px;
+      margin-top: 42.5px;
+      @include media('<=LGtablet') {
+        height: 70%;
+        margin-left: -8%;
+      }
+      @include media('<=1050px') {
+        margin-left: -15%;
+      }
+      @include media('<=950px') {
+        height: 224px;
+        margin: 0;
+        width: 320px;
+      }
+      > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        @include media('<=950px') {
+          height: auto;
+          width: 100%;
+          object-position: left;
+        }
+      }
+    }
+  }
+}

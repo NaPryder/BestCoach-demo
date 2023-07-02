@@ -8,7 +8,7 @@ export default function Layout() {
       <header>
         <Navbar></Navbar>
       </header>
-      <main>
+      <main className="main-content">
         <Outlet></Outlet>
       </main>
       <Footer></Footer>

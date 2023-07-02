@@ -1,0 +1,134 @@
+.card {
+  $card-max-width: 310px;
+  flex: 0 0 auto;
+
+  display: grid;
+  grid-template-columns: $card-max-width;
+  grid-template-rows: 196px 2fr 77px;
+  height: 432px;
+  width: $card-max-width;
+
+  border: 1px solid $very-light-gray-3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+
+  @include media('<=tablet') {
+    width: 235px;
+    height: 374px;
+
+    grid-template-columns: 235px;
+    grid-template-rows: 169px calc(100% - 169px - 67px) 67px;
+  }
+
+  > .profile-image {
+    width: 100%;
+
+    > img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  > .prodile-detail {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 21px 21px;
+    gap: 12px;
+
+    @include media('<=tablet') {
+      padding: 12px 18px 18px;
+      gap: 10px;
+    }
+
+    > h3 {
+      color: $gray-primary;
+
+      @include media('<=tablet') {
+        font-size: 18px;
+      }
+    }
+
+    > .detail {
+      display: grid;
+      grid-template-columns: 18px 2fr;
+      gap: 8.8px;
+
+      @include media('<=tablet') {
+        gap: 7px;
+      }
+
+      > p {
+        font-size: 14px;
+        line-height: 20px;
+        color: $gray-secondary;
+        word-break: break-word;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: calc(100% - 8.8px);
+
+        @include media('<=tablet') {
+          font-size: 10px;
+        }
+      }
+    }
+
+    > .tags {
+      display: flex;
+      gap: 7px;
+
+      @include media('<=tablet') {
+        gap: 6px;
+      }
+    }
+  }
+
+  > .profile-footer {
+    display: flex;
+    background-color: $very-light-gray-2;
+    border-top: 1px solid #e5e7eb;
+    padding: 16px 21px;
+    gap: 14px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media('<=tablet') {
+      padding: 14.4px 16.5px;
+      gap: 11px;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > p {
+        @include media('<=tablet') {
+          font-size: 12px;
+        }
+      }
+
+      > .key {
+        color: $gray-secondary;
+      }
+
+      > p:last-child {
+        font-weight: 500;
+        color: $gray-primary;
+      }
+    }
+
+    > hr {
+      height: 25px;
+      border: 1px solid $gray-secondary;
+
+      @include media('<=tablet') {
+        height: 19px;
+      }
+    }
+  }
+}

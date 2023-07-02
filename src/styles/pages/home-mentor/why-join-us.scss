@@ -1,0 +1,90 @@
+#section-why-join-us {
+  @include set-default-section($yellow-secondary);
+  > .section-content-container {
+    @include set-default-section-container();
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px auto;
+    gap: 188px;
+
+    @include media('<=LGtablet') {
+      margin-left: 16px;
+      margin-right: 16px;
+      gap: 0;
+    }
+
+    @include media('<=950px') {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    > .why-join-us {
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      gap: 28px;
+
+      @include media('<=LGtablet') {
+        max-width: 50%;
+      }
+
+      @include media('<=950px') {
+        max-width: 80%;
+        margin: 32px auto 0;
+        width: auto;
+        gap: 32px;
+      }
+
+      > .topic {
+        > span {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          > hr {
+            height: 20px;
+            width: 4px;
+            background-color: $maroon-primary;
+            @include media('>=950px') {
+              display: none;
+            }
+          }
+        }
+
+        > p {
+          color: $gray-secondary;
+          margin-top: 17.56px;
+          @include media('<=tablet') {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    > .person-image-container {
+      height: 583px;
+      width: 436px;
+      @include media('<=950px') {
+        margin: 32px 16px 0;
+        height: 400px;
+        width: auto;
+      }
+      @include media('<=tablet') {
+        width: 234px;
+        height: 347.838px;
+      }
+
+      > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

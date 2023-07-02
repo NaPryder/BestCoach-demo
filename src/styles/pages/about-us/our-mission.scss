@@ -1,0 +1,33 @@
+#section-our-mission {
+  @include set-default-section($very-light-gray);
+
+  > .section-content-container {
+    width: 100%;
+    @include set-desktop-margin($top: 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    @include media('<=tablet') {
+      @include set-tablet-margin();
+    }
+    > h2 {
+      text-align: center;
+    }
+
+    > div {
+      max-width: 650px;
+
+      > ul {
+        > li {
+          margin-left: 1em;
+          color: $gray-secondary;
+
+          &::marker {
+            color: $gray-secondary;
+          }
+        }
+      }
+    }
+  }
+}

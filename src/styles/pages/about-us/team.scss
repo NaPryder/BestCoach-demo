@@ -1,0 +1,181 @@
+#section-about-us-our-team {
+  @include set-default-section($very-light-gray);
+  // background-color: skyblue;
+
+  > .section-content-container {
+    display: flex;
+    flex-direction: column;
+    // background-color: rgb(233, 244, 245);
+    gap: 68px;
+    align-items: center;
+    margin-top: 92px;
+    margin-bottom: 102px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media('<=tablet') {
+      gap: 32px;
+    }
+
+    > h2 {
+      text-align: center;
+
+      @include media('<=tablet') {
+        font-size: 23px;
+      }
+    }
+
+    @include media('<=1340px') {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    @include media('<=LGtablet') {
+      margin: 32px 16px;
+      // gap: 5%;
+    }
+
+    > .our-team {
+      display: flex;
+      justify-content: center;
+      gap: 69px;
+
+      @include media('<=tablet') {
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 32px;
+      }
+
+      > .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > .team-member-image-container {
+          height: 218px;
+          width: 218px;
+          background-color: $white;
+          border-radius: 439.431px;
+          overflow: hidden;
+          margin-bottom: 16px;
+
+          @include media('<=tablet') {
+          }
+
+          > img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+
+        > .team-member-name {
+          margin-bottom: 4px;
+        }
+
+        > .team-member-role {
+          opacity: 0.7;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    #about-us-highlight {
+      // background-color: antiquewhite;
+      @include media('<=tablet') {
+        flex-direction: column;
+      }
+
+      > .topic {
+        @include media('<=tablet') {
+          margin-left: 33px;
+          margin-right: 33px;
+
+          > h2 {
+            text-align: center;
+          }
+        }
+      }
+
+      .about-us-keword-items {
+        display: flex;
+
+        // @include media('<=1100px') {
+        //   gap: 12px;
+        // }
+
+        @include media('<=tablet') {
+          flex-direction: column;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        > :first-child {
+          margin-right: 32px;
+
+          @include media('<=tablet') {
+            margin-right: 0;
+            margin-bottom: 12px;
+          }
+        }
+
+        & :nth-child(n) {
+          padding: 0;
+        }
+
+        > div {
+          @include media('<=tablet') {
+            width: 249px;
+          }
+
+          @include media('<=mobile') {
+            gap: 10px;
+          }
+        }
+      }
+
+      .about-us-action-buttons {
+        // background-color: aqua;
+        display: flex;
+        align-items: center;
+        margin-right: 102px;
+        // gap: 20px;
+        min-width: 333px;
+        gap: 20px;
+
+        @include media('<=LGtablet') {
+          margin-right: 46.5px;
+          gap: 20px;
+        }
+
+        @include media('<=1000px') {
+          margin-right: 10%;
+          gap: 10px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @include media('<=tablet') {
+          flex-direction: column;
+          align-items: center;
+          min-width: 177px;
+          margin: 0 33px 0;
+          // border: 5px solid green;
+          // align-self: center;
+          width: 100%;
+        }
+
+        > button {
+          @include media('<=tablet') {
+            width: 222px;
+          }
+
+          // >div {
+          //   text-align: center;
+
+          // }
+        }
+      }
+    }
+  }
+}

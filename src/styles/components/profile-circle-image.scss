@@ -1,0 +1,29 @@
+.profile-image-container {
+  overflow: hidden;
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.border-white {
+    border: 3px solid $white;
+  }
+
+  &.border-yellow {
+    border: 3px solid $yellow-primary;
+  }
+
+  &.auto-resize {
+    @include media('<=tablet') {
+      width: 36.39px;
+      height: 36.39px;
+    }
+  }
+
+  > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
